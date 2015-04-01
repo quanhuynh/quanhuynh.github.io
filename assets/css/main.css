@@ -1,0 +1,75 @@
+body {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+  background: #979C9C; }
+
+#picture {
+  text-align: center;
+  padding: 5% 0 0 0; }
+  #picture img {
+    max-width: 15%; }
+
+.title {
+  color: #2F343B;
+  text-align: center; }
+  .title #name {
+    padding: 1%;
+    font-family: "Poiret One";
+    font-size: 5em;
+    font-weight: 600; }
+  .title #slogan {
+    opacity: 0.8;
+    font-family: Hind, sans-serif;
+    font-size: 2.5em;
+    font-weight: 600; }
+
+.breadcrumb {
+  background: transparent;
+  float: right;
+  height: 10%; }
+  .breadcrumb li {
+    float: left;
+    font-size: 2em;
+    font-family: "Hind";
+    font-weight: 500; }
+  .breadcrumb a {
+    color: #2F343B;
+    opacity: 0.8;
+    transition: linear 0.1s; }
+    .breadcrumb a:hover {
+      text-decoration: none;
+      opacity: 1; }
+
+.divider {
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #703030;
+  margin-bottom: 3%;
+  padding-bottom: 0.4%; }
+
+.actual-content {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center; }
+  .actual-content #content-picture {
+    padding: 2%;
+    margin-top: 1%; }
+    .actual-content #content-picture img {
+      max-width: 75%;
+      border-radius: 50%;
+      border: medium #703030 solid; }
+  .actual-content #about {
+    text-align: left;
+    font-family: Hind, sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    font-color: #2F343B;
+    opacity: 0.8; }
+
+/*# sourceMappingURL=main.css.map */
