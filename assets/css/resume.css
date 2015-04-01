@@ -73,8 +73,7 @@ body {
   font-family: Hind, sans-serif; }
   .content .section {
     margin: 2% 0 2% 0;
-    transition: linear 0.1s;
-    border-radius: 2%; }
+    transition: linear 0.1s; }
     .content .section:hover {
       background-color: #888C8C; }
     .content .section .resume-heading {
