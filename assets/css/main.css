@@ -56,7 +56,8 @@ body {
 .actual-content {
   width: 85%;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 5%; }
   .actual-content #content-picture {
     padding: 2%;
     margin-top: 1%; }
@@ -71,5 +72,19 @@ body {
     font-weight: 600;
     font-color: #2F343B;
     opacity: 0.8; }
+
+.footer {
+  padding-bottom: 5%; }
+  .footer .container {
+    margin: 0 auto;
+    text-align: center; }
+    .footer .container img {
+      max-width: 3%;
+      border-radius: 50%;
+      margin: 0 1% 0 1%;
+      opacity: 0.9;
+      transition: linear 0.1s; }
+      .footer .container img:hover {
+        opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */
