@@ -74,6 +74,10 @@ body {
   .content .section {
     margin: 2% 0 2% 0;
     transition: linear 0.1s; }
+    .content .section a {
+      color: #2F343B; }
+      .content .section a:hover {
+        text-decoration: none; }
     .content .section:hover {
       background-color: #888C8C; }
     .content .section .resume-heading {
