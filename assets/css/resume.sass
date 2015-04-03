@@ -1,5 +1,6 @@
 $base-font: Hind, sans-serif
 $text-color: #2F343B /*#E3CDA4*/
+$text-shadow: 0.5px 0.5px 0.5px #929491
 body
 	position: relative
 	overflow-y: scroll
@@ -7,16 +8,13 @@ body
 	margin: 0px
 	padding: 0px
 	font-size: 10px
-	background: #979C9C /*#E4DBBB #193441 #2F343B*/
-.vcenter 
-	display: inline-block
-	vertical-align: middle
-	float: none
+	background: #B7B9B5
 
 #heading
 	padding-top: 3%
 	font:
 		family: $base-font
+	text-shadow: $text-shadow
 	#name
 		font:
 			size: 3em
@@ -52,6 +50,7 @@ body
 		font-size: 2em
 		font-family: $base-font
 		font-weight: 500
+		text-shadow: $text-shadow
 	a
 		color: $text-color
 		opacity: 0.8
@@ -69,7 +68,7 @@ body
 	padding-bottom: 0.4%
 
 #current
-	margin: 1% auto 1% auto
+	margin: 1% auto 0% auto
 	font:
 		family: $base-font
 		size: 2.5em
@@ -85,10 +84,12 @@ body
 			&:hover
 				text-decoration: none
 		margin: 2% 0 2% 0
+		padding: 1% 0 0 0
 		transition: linear 0.1s
 		&:hover
-			background-color: #888C8C
+			background-color: #A0A3A3
 		.resume-heading
+			text-shadow: $text-shadow
 			font:
 				size: 3.3em
 				weight: 600

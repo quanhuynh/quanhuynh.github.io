@@ -5,16 +5,12 @@ body {
   margin: 0px;
   padding: 0px;
   font-size: 10px;
-  background: #979C9C; }
-
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none; }
+  background: #B7B9B5; }
 
 #heading {
   padding-top: 3%;
-  font-family: Hind, sans-serif; }
+  font-family: Hind, sans-serif;
+  text-shadow: 0.5px 0.5px 0.5px #929491; }
   #heading #name {
     font-size: 3em;
     font-weight: 600;
@@ -46,7 +42,8 @@ body {
     float: left;
     font-size: 2em;
     font-family: Hind, sans-serif;
-    font-weight: 500; }
+    font-weight: 500;
+    text-shadow: 0.5px 0.5px 0.5px #929491; }
   .breadcrumb a {
     color: #2F343B;
     opacity: 0.8;
@@ -64,7 +61,7 @@ body {
   padding-bottom: 0.4%; }
 
 #current {
-  margin: 1% auto 1% auto;
+  margin: 1% auto 0% auto;
   font-family: Hind, sans-serif;
   font-size: 2.5em;
   font-weight: 500; }
@@ -73,14 +70,16 @@ body {
   font-family: Hind, sans-serif; }
   .content .section {
     margin: 2% 0 2% 0;
+    padding: 1% 0 0 0;
     transition: linear 0.1s; }
     .content .section a {
       color: #2F343B; }
       .content .section a:hover {
         text-decoration: none; }
     .content .section:hover {
-      background-color: #888C8C; }
+      background-color: #A0A3A3; }
     .content .section .resume-heading {
+      text-shadow: 0.5px 0.5px 0.5px #929491;
       font-size: 3.3em;
       font-weight: 600; }
     .content .section .resume-content {

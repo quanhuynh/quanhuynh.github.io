@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		title Projects
+		meta(name="description", content="Quan Huynh's Portfolio")
+		// meta(name="keywords", content="")
+		meta(charset="utf-8")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", type="text/css")
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Hind", type="text/css")
+		link(rel="stylesheet", href="assets/css/projects.css", type="text/css")
+
+	body
+		.container
+			.row.heading 
+				.col-xs-12 Projects
+
+			.col-lg-12
+				ul.breadcrumb.text-right
+					li: a(href="index.html") Home
+					li: a(href="resume.html") Résumé
+					li: a(href="projects.html") Projects
+
+			.col-xs-12.divider-col
+				div.divider
+
+			.row.projects
+				a(href="http://quanhuynh.github.io/news_site_template"): .col-sm-5.project#first
+					p.heading Lorem Ipsum Post
+					img(src="assets/img/lorem-ipsum.jpg")

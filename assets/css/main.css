@@ -5,7 +5,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-size: 10px;
-  background: #979C9C; }
+  background: #B7B9B5; }
 
 #picture {
   text-align: center;
@@ -18,7 +18,8 @@ body {
   text-align: center; }
   .title #name {
     padding: 1%;
-    font-family: "Poiret One";
+    text-shadow: 0.5px 0.5px 0.5px #929491;
+    font-family: "Hind";
     font-size: 5em;
     font-weight: 600; }
   .title #slogan {
@@ -35,7 +36,8 @@ body {
     float: left;
     font-size: 2em;
     font-family: "Hind";
-    font-weight: 500; }
+    font-weight: 500;
+    text-shadow: 0.5px 0.5px 0.5px #929491; }
   .breadcrumb a {
     color: #2F343B;
     opacity: 0.8;
