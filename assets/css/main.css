@@ -4,8 +4,7 @@ body {
   overflow-x: hidden;
   margin: 0px;
   padding: 0px;
-  font-size: 10px;
-  background: #B7B9B5; }
+  font-size: 10px; }
 
 #picture {
   text-align: center;
@@ -19,14 +18,13 @@ body {
   .title #name {
     padding: 1%;
     text-shadow: 0.5px 0.5px 0.5px #929491;
-    font-family: "Hind";
+    font-family: Hind, sans-serif;
     font-size: 5em;
     font-weight: 600; }
   .title #slogan {
-    opacity: 0.8;
+    opacity: 0.7;
     font-family: Hind, sans-serif;
-    font-size: 2.5em;
-    font-weight: 600; }
+    font-size: 2.5em; }
 
 .breadcrumb {
   background: transparent;
@@ -35,7 +33,7 @@ body {
   .breadcrumb li {
     float: left;
     font-size: 2em;
-    font-family: "Hind";
+    font-family: Hind, sans-serif;
     font-weight: 500;
     text-shadow: 0.5px 0.5px 0.5px #929491; }
   .breadcrumb a {
@@ -69,24 +67,60 @@ body {
       border: medium #703030 solid; }
   .actual-content #about {
     text-align: left;
+    padding-top: 2%;
     font-family: Hind, sans-serif;
     font-size: 1.4em;
     font-weight: 600;
     font-color: #2F343B;
     opacity: 0.8; }
 
-.footer {
+#work {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5% 0 5% 0; }
+  #work p {
+    text-shadow: 0.5px 0.5px 0.5px #929491;
+    font-family: Hind, sans-serif;
+    font-size: 3.5em;
+    font-weight: 600; }
+  #work .workpiece a:hover {
+    text-decoration: none; }
+  #work .workpiece a .thumbnail {
+    transition: 0.1s linear; }
+    #work .workpiece a .thumbnail:hover {
+      background-color: #E6E6E6; }
+  #work .workpiece .caption .heading {
+    font-size: 2em;
+    text-shadow: none; }
+  #work .workpiece .caption .info {
+    font-size: 1.5em;
+    text-shadow: none; }
+  #work .workpiece .thumbnail img {
+    max-width: 70%; }
+
+footer {
   padding-bottom: 5%; }
-  .footer .container {
+  footer .links {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2%; }
+    footer .links a {
+      font-family: Hind, sans-serif;
+      font-size: 2em;
+      color: #2F343B; }
+      footer .links a:hover {
+        text-decoration: none; }
+  footer .container {
     margin: 0 auto;
     text-align: center; }
-    .footer .container img {
-      max-width: 3%;
+    footer .container img {
+      max-width: 35px;
+      min-width: 20px;
       border-radius: 50%;
       margin: 0 1% 0 1%;
       opacity: 0.9;
       transition: linear 0.1s; }
-      .footer .container img:hover {
+      footer .container img:hover {
         opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

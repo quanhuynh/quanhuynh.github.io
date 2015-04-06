@@ -21,8 +21,8 @@ html
 			.col-lg-12
 				ul.breadcrumb.text-right
 					li: a(href="index.html") Home
-					li: a(href="resume.html") Résumé
-					li: a(href="projects.html") Projects
+					li: a(href="#work") Work
+					//li: a(href="404.html") 404
 			
 			.col-xs-12.divider-col
 				div.divider
@@ -31,15 +31,39 @@ html
 				.col-lg-3.col-md-6.col-sm-12.col-xs-12#content-picture.pull-left
 					img(src="assets/img/head_icon.jpg")
 				.col-lg-9.col-md-6.col-sm-12.col-xs-12#about
-					h4 Hi there!
-					p I'm Quan, and I'm currently a first year Computer Science student at the University of California, Berkeley. I am very interested in front-end development and am striving to improve as much as I can. I wrote my first line of HTML in February 2015 and have learned so much since then.
-					p Right now, I am occupying myself with a few beginner web development projects, such as redesigns and concept websites. Feel free to check out my résumé and projects, though both are in their early stages. 
-					p Besides that, I am an active member of the Cal Archery Club. I plan on shooting competitively soon. I also have a passion for dystopian novels and films, red velvet desserts, physics, comics, and sudoku puzzles.
+					p Hi there!
+					p I'm Quan, and I'm currently a first year Computer Science student at the University of California, Berkeley. I have been very interested in front-end development and wrote my first line of HTML in February 2015.
+					p Right now, I am occupying myself with a few beginner web development projects, such as redesigns and concept websites, along with mastering JavaScript and jQuery. Check out my résumé on this page.
+					p Besides that, I am an active member of the Cal Archery Club. I also have a passion for dystopian novels and films, design methods, red velvet desserts, #703030, physics, comics, and sudoku puzzles.
+
+			.row#work
+				p Work
+				.col-sm-5.workpiece
+					a(href="404.html")
+						.thumbnail#berkeley
+							img(src="assets/img/berkeley_seal.gif")
+							.caption
+								p.heading UC Berkeley
+								p.info Read more about my life as a student here
+				.col-sm-2.spacer
+					p
+				.col-sm-5.workpiece
+					a(href="404.html")
+						.thumbnail#loremipsum
+							img(src="assets/img/lorem-ipsum-frontpage.jpg")
+							.caption
+								p.heading Lorem Ipsum Post
+								p.info My first project as a web design newbie
 
 			footer.row
+				.links.text-left
+					.link
+						a(href="resume.pdf", target="_blank") My résumé
+
 				.footer.col-xs-12
 					.container
-						a(href="http://facebook.com/quanwuin"): img(src="assets/img/fb_icon.png")
-						a(href="http://linkedin.com/in/quanhuynh"): img(src="assets/img/in_icon.jpg")
-						a(href="http://instagram.com/quantum.soup"): img(src="assets/img/insta_icon.png")
-						a(href="mailto:quanhuynh@berkeley.edu"): img(src="assets/img/mail_icon.png")
+						a(href="http://github.com/quanhuynh", target="_blank"): img(src="assets/img/github.png")
+						a(href="http://facebook.com/quanwuin", target="_blank"): img(src="assets/img/fb_icon.png")
+						a(href="http://linkedin.com/in/quanhuynh", target="_blank"): img(src="assets/img/in_icon.jpg")
+						//a(href="http://instagram.com/quantum.soup", target="_blank"): img(src="assets/img/insta_icon.png")
+						a(href="mailto:quanhuynh@berkeley.edu", target="_blank"): img(src="assets/img/mail_icon.png")
