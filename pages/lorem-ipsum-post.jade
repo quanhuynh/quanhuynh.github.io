@@ -1,0 +1,40 @@
+doctype html
+html
+	head
+		title Lorem Ipsum Post
+		meta(name="description", content="Quan Huynh's Personal Website")
+		// meta(name="keywords", content="")
+		meta(charset="utf-8")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", type="text/css")
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Hind", type="text/css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+		link(rel="stylesheet", href="../assets/css/lip.css", type="text/css")
+
+	body
+		include ../includes/breadcrumb.jade
+		.col-xs-12.divider-col
+				div.divider
+		.main-content
+			.title
+				.header.col-xs-12 Lorem Ipsum Post
+				.col-xs-2.spacer
+				.col-xs-8#slideshow
+						div(data-interval="4000", data-ride="carousel").carousel.slide#myCarousel
+							.carousel-inner
+								.active.item
+									img(src="../assets/img/lorem1.jpg")							
+								.item
+									img(src="../assets/img/lorem2.jpg")						
+								.item
+									img(src="../assets/img/lorem3.jpg")						
+							a(href="#myCarousel", data-slide="prev").carousel-control.left
+								span.glyphicon.glyphicon-chevron-left
+							a(href="#myCarousel", data-slide="next").carousel-control.right
+								span.glyphicon.glyphicon-chevron-right
+				.col-xs-2.spacer
+			.about
+				.col-xs-1.spacer
+				.col-xs-10.text
+					
+				.col-xs-1.spacer

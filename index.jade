@@ -18,10 +18,7 @@ html
 				#name Quan Huynh
 				#slogan WebDev Enthusiast
 			
-			.col-lg-12
-				ul.breadcrumb.text-right
-					li: a(href="index.html") Home
-					li: a(href="#work") Work
+			include includes/breadcrumb.jade
 					//li: a(href="404.html") 404
 			
 			.col-xs-12.divider-col
@@ -41,16 +38,16 @@ html
 				.col-sm-5.workpiece
 					a(href="404.html")
 						.thumbnail#berkeley
-							img(src="assets/img/berkeley_seal.gif")
+							img(src="assets/img/berkeley-logo.png")
 							.caption
 								p.heading UC Berkeley
-								p.info Read more about my life as a student here
+								p.info My life as a student here
 				.col-sm-2.spacer
 					p
 				.col-sm-5.workpiece
 					a(href="404.html")
 						.thumbnail#loremipsum
-							img(src="assets/img/lorem-ipsum-frontpage.jpg")
+							img(src="assets/img/lorem-frontpage.jpg")
 							.caption
 								p.heading Lorem Ipsum Post
 								p.info My first project as a web design newbie

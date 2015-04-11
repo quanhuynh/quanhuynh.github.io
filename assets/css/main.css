@@ -87,6 +87,8 @@ body {
     text-decoration: none; }
   #work .workpiece a .thumbnail {
     transition: 0.1s linear; }
+    #work .workpiece a .thumbnail img {
+      max-width: 100%; }
     #work .workpiece a .thumbnail:hover {
       background-color: #E6E6E6; }
   #work .workpiece .caption .heading {

@@ -1,0 +1,46 @@
+body {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px; }
+
+.breadcrumb {
+  background: transparent;
+  float: right;
+  height: 10%;
+  padding: 2% 2% 0 0; }
+  .breadcrumb li {
+    float: left;
+    font-size: 2em;
+    font-family: Hind, sans-serif;
+    font-weight: 500;
+    text-shadow: 0.5px 0.5px 0.5px #929491; }
+  .breadcrumb a {
+    color: #2F343B;
+    opacity: 0.8;
+    transition: linear 0.1s; }
+    .breadcrumb a:hover {
+      text-decoration: none;
+      opacity: 1; }
+
+.divider {
+  width: 80%;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #703030;
+  margin-bottom: 3%;
+  padding-bottom: 0.4%; }
+
+.main-content {
+  width: 90%;
+  margin: 0 auto; }
+  .main-content .title .header {
+    padding: 2%;
+    font-family: Hind, sans-serif;
+    font-size: 4em;
+    font-weight: 600; }
+
+/*# sourceMappingURL=lip.css.map */
