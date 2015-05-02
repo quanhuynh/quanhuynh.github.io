@@ -99,10 +99,6 @@ body
 	      color: black
 	      &:hover
 	        text-decoration: none
-	    .one
-	    	background-image: url(../img/lorem1.jpg)
-	    .two
-	    	background-image: url(../img/chau.jpg)
 	    .thumbnail-unit
 	      display: block
 	      float: left
@@ -122,13 +118,14 @@ body
 	        top: 100%
 	        height: 100%
 	        width: 100%
-	        background: fade-out(black, 0.5)
+	        background: fade-out(#703030, 0.3)
 	        transition: linear 0.2s
 	        text-align: center
-	        padding-top: 20%
-	        img
-	          height: 30px
-	          width: 30px
+	        padding-top: 25%
+	        opacity: 0
+	        //img
+	        //  height: 30px
+	        //  width: 30px
 	        strong
 	          font:
 	            family: $base-font
@@ -137,6 +134,7 @@ body
 	          color: white
 	      &:hover .thumbnail-overlay
 	        top: 0
+	        opacity: 1
 
 footer
 	.links
