@@ -40,23 +40,34 @@ html
 
 				.row.work#work
 					.header Work
-					.thumbnail-container
-						a(href="pages/lorem-ipsum-post.html").thumbnail-unit(style="background-image: url(assets/img/lorem1.jpg)")
-							.thumbnail-overlay
-								strong Lorem Ipsum Post
-								//img(src="assets/img/mag-glass.png")
-						a(href="http://mchuynh.github.io").thumbnail-unit(style="background-image: url(assets/img/chau.jpg)")
-							.thumbnail-overlay
-								strong Chau Huynh
-								//img(src="assets/img/mag-glass.png")
-						a(href="").thumbnail-unit.three
-							.thumbnail-overlay
-								strong Coming Soon!
-								//img(src="assets/img/mag-glass.png")
-						a(href="").thumbnail-unit.four
-							.thumbnail-overlay
-								strong Coming Soon!
-								//img(src="assets/img/mag-glass.png")
+					.work-slider
+						
+						.thumb-wrap
+							.thumbnail-container
+								.thumbnail-unit(data-folder ="work-1", style="background-image: url(assets/img/work/work-1/img1.jpg)")
+									.thumbnail-overlay
+										strong Lorem Ipsum Post
+										//img(src="assets/img/mag-glass.png")
+								.thumbnail-unit(data-folder ="work-2", style="background-image: url(assets/img/work/work-2/img1.jpg)")
+									.thumbnail-overlay
+										strong Artists Template
+										//img(src="assets/img/mag-glass.png")
+								.thumbnail-unit
+									.thumbnail-overlay
+										strong Coming Soon!
+								//		img(src="assets/img/mag-glass.png")
+								.thumbnail-unit
+									.thumbnail-overlay
+										strong Coming Soon!
+								//		img(src="assets/img/mag-glass.png")
+						
+						.work-wrap
+							.work-container
+								.work-return
+									img(src="assets/img/return.png")
+								h4.project-title Sample Work Title
+								div.project-load
+
 
 			footer.row
 				.links.text-left
