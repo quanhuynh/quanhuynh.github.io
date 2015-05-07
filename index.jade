@@ -8,7 +8,7 @@ html
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", type="text/css")
 		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Hind:400,500,600,700", type="text/css")
 		link(rel="stylesheet", href="assets/css/main.css", type="text/css")
-	
+		link(rel="shortcut icon", type="image/x-icon", href="assets/img/page-icon.ico")
 	body
 		.container
 			#picture
@@ -34,9 +34,10 @@ html
 						img(src="assets/img/head_icon.jpg")
 					.col-lg-9.col-md-6.col-sm-12.col-xs-12#about
 						p Hi there!
-						p I'm Quan, and I'm currently a first year Computer Science student at the University of California, Berkeley. I have a special interest in web development and software engineering.
-						p I am occupying myself with personal projects and tutorials, both in web development and software works. Check out my résumé on this page.
+						p I'm Quan, and I'm currently a first year Computer Science student at the University of California, Berkeley. I have a special interest in web development and software engineering! My main priority now is mastering my skills with side projects and tutorials. I'm also looking for an opportunity to show off what I know!
 						p Besides that, I am an active member of the Cal Archery Club. I also have a passion for dystopian novels and films, design methods, red velvet desserts, <a href="http://www.colorhexa.com/703030">#703030</a>, physics, comics, and sudoku puzzles.
+						
+						p TL;DR : I like to code, I like to shoot arrows, I like desserts. Nice to meet you!
 
 				.row.work#work
 					.header Work
@@ -44,29 +45,31 @@ html
 						
 						.thumb-wrap
 							.thumbnail-container
-								.thumbnail-unit(data-folder ="work-1", style="background-image: url(assets/img/work/work-1/img1.jpg)")
+								.thumbnail-unit(data-folder ="work-1", style="background-image: url(assets/img/work/work-1/thumbnail1.png)")
 									.thumbnail-overlay
 										strong Lorem Ipsum Post
-										//img(src="assets/img/mag-glass.png")
-								.thumbnail-unit(data-folder ="work-2", style="background-image: url(assets/img/work/work-2/img1.jpg)")
-									.thumbnail-overlay
-										strong Artists Template
-										//img(src="assets/img/mag-glass.png")
+		
 								.thumbnail-unit
 									.thumbnail-overlay
 										strong Coming Soon!
-								//		img(src="assets/img/mag-glass.png")
+		
 								.thumbnail-unit
 									.thumbnail-overlay
 										strong Coming Soon!
-								//		img(src="assets/img/mag-glass.png")
+						
+								.thumbnail-unit
+									.thumbnail-overlay
+										strong Coming Soon!
+						
 						
 						.work-wrap
 							.work-container
 								.work-return
 									img(src="assets/img/return.png")
-								h4.project-title Sample Work Title
+								h4.project-title
+									//insert title based on thumbnail title
 								div.project-load
+									//load html as a separate workpage
 
 
 			footer.row
