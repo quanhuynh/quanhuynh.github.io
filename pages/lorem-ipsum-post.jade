@@ -1,0 +1,63 @@
+doctype html
+html
+	head
+		title Lorem Ipsum Post
+		meta(name="description", content="Quan Huynh's Personal Website")
+		// meta(name="keywords", content="")
+		meta(charset="utf-8")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", type="text/css")
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Hind", type="text/css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+		link(rel="stylesheet", href="../assets/css/lip.css", type="text/css")
+
+	body
+		.col-lg-12
+			ul.breadcrumb.text-right
+				li: a(href="../index.html") Home
+				li: a(href="../index.html#work") Work
+		.col-xs-12.divider-col
+				div.divider
+		.main-content
+			.title
+				a(href="http://quanhuynh.github.io/news_site_template").header.col-xs-12 Lorem Ipsum Post
+				.col-xs-12#slideshow
+						div(data-interval="4000", data-ride="carousel").carousel.slide#myCarousel
+							.carousel-inner
+								.active.item
+									img(src="../assets/img/lorem1.jpg")
+								.item
+									img(src="../assets/img/lorem2.jpg")
+								.item
+									img(src="../assets/img/lorem3.jpg")
+							a(href="#myCarousel", data-slide="prev").carousel-control.left
+								span.glyphicon.glyphicon-chevron-left
+							a(href="#myCarousel", data-slide="next").carousel-control.right
+								span.glyphicon.glyphicon-chevron-right
+			.about
+				.col-xs-12.text
+					p This was my first personal project in web development (besides building my own website). I coded LIP from scratch in HTML and CSS, with a bit of JavaScript and jQuery. I viewed this project more as a tool for my own learning experience.
+					p LIP is a sample home page of a mock news site. I got inspiration from my own experience in navigating news websites. In my opinion, many don't fully prioritize the flow of information on a page. I notice that they try to put as much information on the front page as possible without providing a "map" for the reader to follow.
+					p In my implementation of LIP, features I focused on include:
+					ul
+						li A clean top bar for immediate access to easy navigation.
+						li A slideshow of featured articles to capture the reader's attention.
+						li More featured articles in the Latest News section.
+						li And on the main content of the front page: card-style boxes with popular news tags. 
+					p While the layout may be less dense in terms of information than some news sites out there, I imagine it would be more aesthetically appealing. 
+					p I hope to be going back to add and improve the project as I learn more. You can check out the site in action <a href="http://quanhuynh.github.io/news_site_template"> here </a>
+			.features
+				.col-xs-12
+					.panel.panel-default
+						.panel-heading Languages
+						.panel-body HTML5, CSS3, JavaScript
+						.panel-heading Features
+						.panel-body Bootstrap, AccuWeather Weather Widget, SASS, Jade
+
+		footer.col-xs-12
+			.container
+				a(href="http://github.com/quanhuynh", target="_blank"): img(src="../assets/img/github.png")
+				a(href="http://facebook.com/quanwuin", target="_blank"): img(src="../assets/img/fb_icon.png")
+				a(href="http://linkedin.com/in/quanhuynh", target="_blank"): img(src="../assets/img/in_icon.jpg")
+				//a(href="http://instagram.com/quantum.soup", target="_blank"): img(src="../assets/img/insta_icon.png")
+				a(href="mailto:quanhuynh@berkeley.edu", target="_blank"): img(src="../assets/img/mail_icon.png")
