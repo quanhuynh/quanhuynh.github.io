@@ -44,7 +44,7 @@ function workLoad() {
 
 }
 
-
+//implementation of nicescroll.js
 $(document).ready(
   function() { 
     $("html").niceScroll();
