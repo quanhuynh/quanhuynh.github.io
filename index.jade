@@ -7,83 +7,76 @@ html
 		meta(charset="utf-8")
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", type="text/css")
 		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Hind:400,500,600,700", type="text/css")
+		link(href='http://fonts.googleapis.com/css?family=VT323', rel='stylesheet', type='text/css')
 		link(rel="stylesheet", href="assets/css/main.css", type="text/css")
 		link(rel="shortcut icon", type="image/x-icon", href="assets/img/page-icon.ico")
 	body
-		.container
-			#picture
-				img(src="assets/img/glasses.png")
-			
-			.title
-				#name Quan Huynh
-				#slogan Web Enthusiast
-			
-			.col-lg-12
+		.top-nav
+			.col-sm-1.col-xs-12
+				img(src="assets/img/head_icon.jpg")
+			.col-sm-11.col-xs-12
 				ul.breadcrumb.text-right
 					li: a(href="index.html") Home
+					li: a(href="#about") About
 					li: a(href="#work") Work
-			
-			.col-xs-12.divider-col
-				div.divider
-
-
-			.actual-content
-				.row.about
-					.header.col-xs-12 About Me
-					.col-lg-3.col-md-6.col-sm-12.col-xs-12#content-picture.pull-left
-						img(src="assets/img/head_icon.jpg")
-					.col-lg-9.col-md-6.col-sm-12.col-xs-12#about
-						p Hi there!
-						p I'm Quan, and I'm currently a first year Computer Science student at the University of California, Berkeley. I have a special interest in web development and software engineering! My main priority now is mastering my skills with side projects and tutorials. I'm also looking for an opportunity to show off what I know!
-						p Besides that, I am an active member of the Cal Archery Club. I also have a passion for dystopian novels and films, design methods, red velvet desserts, <a href="http://www.colorhexa.com/703030">#703030</a>, physics, comics, and sudoku puzzles.
-						
-						p TL;DR : I like to code, I like to shoot arrows, I like desserts. Nice to meet you!
-
-				.row.work#work
-					.header Work
-					.work-slider
-						
-						.thumb-wrap
-							.thumbnail-container
-								.thumbnail-unit(data-folder="work-1", style="background-image: url(assets/img/work/work-1/thumbnail.png)")
-									.thumbnail-overlay
-										strong PresentText
 		
-								.thumbnail-unit(data-folder="work-2", style="background-image: url(assets/img/work/work-2/thumbnail.png)")
-									.thumbnail-overlay
-										strong MC Nails
-		
-								.thumbnail-unit(data-folder="work-3", style="background-image: url(assets/img/work/work-3/thumbnail.png)")
-									.thumbnail-overlay
-										strong Lorem Ipsum Post
-						
-								.thumbnail-unit
-									.thumbnail-overlay
-										strong Coming Soon!
-						
-						
-						.work-wrap
-							.work-container
-								.work-return
-									img(src="assets/img/return.png")
-								h4.project-title
-									//insert title based on thumbnail title
-								div.project-load
-									//load html as a separate workpage
+		.title
+			#name Quan Huynh
+			#slogan Software | Interweb | Tea
 
+		.actual-content
+			.row.about#about
+				.header.col-xs-12 -- About --
+				.col-lg-12#about
+					p Hi there!
+					p.first-par I'm Quan, and I'm currently a Computer Science student at the University of California, Berkeley. I have a passion for anything involving software, from web dev to AI. I'm working on side projects right now, but I'm also looking for an opportunity to use my skills in the real world. So please contact me if you are interested.
+					p.second-par Besides that, I am an active member of the Cal Archery Club and an avid cuber (I solve Rubik's cubes for fun - it is a thing). I also love dystopian novels and films, fine tea, learning about design methodologies, red velvet desserts, physics, comics, and sudoku puzzles.
+					
+					p.second-par TL;DR : I like to code, I like to shoot arrows, I like desserts. Nice to meet you!
 
-			footer.row
-				.links.text-left
-					.link
-						a(href="resume.pdf", target="_blank") My résumé
+			.row.work#work
+				.header --- Work ---
+				.work-slider
+					
+					.thumb-wrap
+						.thumbnail-container
+							.thumbnail-unit(data-folder="work-1", style="background-image: url(assets/img/work/work-1/thumbnail.png)")
+								.thumbnail-overlay
+									strong PresentText
+	
+							.thumbnail-unit(data-folder="work-2", style="background-image: url(assets/img/work/work-2/thumbnail.png)")
+								.thumbnail-overlay
+									strong MC Nails
+	
+							.thumbnail-unit(data-folder="work-3", style="background-image: url(assets/img/work/work-3/thumbnail.png)")
+								.thumbnail-overlay
+									strong Lorem Ipsum Post
+					
+							.thumbnail-unit
+								.thumbnail-overlay
+									strong Coming Soon!
+					
+					
+					.work-wrap
+						.work-container
+							.work-return
+								img(src="assets/img/return.png")
+							h4.project-title
+								//insert title based on thumbnail title
+							div.project-load
+								//load html as a separate workpage
 
-				.footer.col-xs-12
-					.container
-						a(href="http://github.com/quanhuynh", target="_blank"): img(src="assets/img/github.png")
-						a(href="http://facebook.com/quanwuin", target="_blank"): img(src="assets/img/fb_icon.png")
-						a(href="http://linkedin.com/in/quanhuynh", target="_blank"): img(src="assets/img/in_icon.jpg")
-						//a(href="http://instagram.com/quantum.soup", target="_blank"): img(src="assets/img/insta_icon.png")
-						a(href="mailto:quanhuynh@berkeley.edu", target="_blank"): img(src="assets/img/mail_icon.png")
+		footer.row
+			.links.text-left
+				.link
+					a(href="resume.pdf", target="_blank") My résumé
+
+			.footer.col-xs-12
+				.container
+					a(href="http://github.com/quanhuynh", target="_blank"): img(src="assets/img/github.png")
+					a(href="http://facebook.com/quanwuin", target="_blank"): img(src="assets/img/fb_icon.png")
+					a(href="http://linkedin.com/in/quanhuynh", target="_blank"): img(src="assets/img/in_icon.jpg")
+					a(href="mailto:quanhuynh@berkeley.edu", target="_blank"): img(src="assets/img/mail_icon.png")
 
 		script(src="https://code.jquery.com/jquery-2.1.3.min.js")
 		script(src="assets/js/nicescroll/jquery.nicescroll.js")
