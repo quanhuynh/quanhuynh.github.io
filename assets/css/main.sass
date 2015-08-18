@@ -12,6 +12,7 @@ body
 	padding: 0px
 	font-size: 10px
 	color: $dark-text-color
+	font-family: $base-font
 
 ::selection
 	background: black
@@ -36,7 +37,6 @@ body
 			float: left
 			font:
 				size: 25px
-				family: $base-font
 				weight: 500
 			text-shadow: $text-shadow
 		a
@@ -48,36 +48,39 @@ body
 				opacity: 1
 
 .title
-	background: url("../img/grid.png")
+	background: 
+		image: url("../img/grid.png")
+		attachment: fixed
+		position: top center
 	padding-top: 35vh
 	padding-bottom: 35vh
 	color: $bright-text-color
 	text-align: center
 	transition: linear 0.2s
+	position: relative
+	z-index: -100
 	#name
 		display: inline-block
 		padding: 15px
 		font:
-			family: $base-font
 			size: 75px
 			weight: 600
 		border: 7px solid $bright-text-color
 	#slogan
 		padding: 15px
 		font:
-			family: $base-font
 			size: 30px
 
 
 
 .actual-content
+	background-color: white
 	.row
 		padding: 30px
 	.header
 		padding: 20px 0 20px 0
 		text-align: center
 		font:
-			family: $base-font
 			size: 40px
 			weight: 600
 	.about
@@ -85,13 +88,8 @@ body
 		text-align: center
 		#about
 			font:
-				family: $base-font
 				size: 18px
-			opacity: 0.8
-		.first-par
-			transform: translate(100px, 20px)
-		.second-par
-			transform: translate(-100px, 20px)
+			opacity: 0.8s
 
 	.work //work
 		overflow-x: hidden
@@ -155,11 +153,6 @@ body
 				font-weight: 600
 				&:hover
 					text-decoration: none
-			h4
-				color: #703030
-				font-weight: 400
-				font-size: 2.2em
-				margin-left: 60px
 			img
 				max-width: 100%
 				border-radius: 15px
@@ -176,11 +169,13 @@ body
 				&:hover
 					opacity: 0.8
 			.project-title
-				font-weight: 700
+				font-size: 25px
+				margin-left: 60px
 			.project-load
 				text-align: center
 				padding-bottom: 50px
 				h5
+					font-size: 18px
 					padding: 10px
 				img
 					max-width: 80%
