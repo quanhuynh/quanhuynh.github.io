@@ -54,13 +54,10 @@ $(window).scroll(function() {
     'transform' : 'translate(0px, ' + wScroll+ '%)'
   });
 
-})
-
-//implementation of nicescroll.js
-$(document).ready(
-  function() { 
-    $("html").niceScroll();
+  if(wScroll > $('.work-slider').offset().top - $(window).height()){
+    var offset = Math.min(0, wScroll - $('.work-slider').offset().top + $(window).height()-350);
+    $('.left-units').css({'transform': 'translate('+offset+'px, '+ -offset*0.5 +'px)'});
+    $('.right-units').css({'transform': 'translate('+Math.abs(offset)+'px, '+Math.abs(offset*0.5)+'px)'});
   }
-);
 
-$("#mydiv").getNiceScroll().hide();
+})

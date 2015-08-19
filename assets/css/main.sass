@@ -36,7 +36,7 @@ body
 		li
 			float: left
 			font:
-				size: 25px
+				size: 2.5em
 				weight: 500
 			text-shadow: $text-shadow
 		a
@@ -52,8 +52,8 @@ body
 		image: url("../img/grid.png")
 		attachment: fixed
 		position: top center
-	padding-top: 35vh
-	padding-bottom: 35vh
+	padding-top: 40vh
+	padding-bottom: 40vh
 	color: $bright-text-color
 	text-align: center
 	transition: linear 0.2s
@@ -63,32 +63,32 @@ body
 		display: inline-block
 		padding: 15px
 		font:
-			size: 75px
+			size: 7em
 			weight: 600
 		border: 7px solid $bright-text-color
 	#slogan
 		padding: 15px
 		font:
-			size: 30px
-
+			size: 3em
+	
 
 
 .actual-content
 	background-color: white
 	.row
-		padding: 30px
+		padding: 50px
 	.header
 		padding: 20px 0 20px 0
 		text-align: center
 		font:
-			size: 40px
+			size: 4.5em
 			weight: 600
 	.about
 		margin: 0 auto
 		text-align: center
 		#about
 			font:
-				size: 18px
+				size: 1.8em
 			opacity: 0.8s
 
 	.work //work
@@ -108,6 +108,10 @@ body
 	    max-width: 80%
 	    margin: 0 auto
 	    padding-bottom: 350px
+	    .left-units
+	    	transform: translate(100px, 20px)
+	    .right-units
+	    	transform: translate(-100px, 20px)
 	    .thumbnail-unit
 	      display: block
 	      float: left
@@ -128,18 +132,22 @@ body
 	        top: 100%
 	        height: 100%
 	        width: 100%
-	        background: fade-out(#000000, 0.4)
+	        background: fade-out(black, 0.3)
 	        transition: linear 0.2s
 	        text-align: center
 	        padding-top: 25%
 	        cursor: pointer
 	        opacity: 0
 	        strong
-	          font:
-	            family: $base-font
-	            size: 2.6em
+	          font-size: 2.6em
 	          display: block
 	          color: white
+	        p
+	        	font-size: 1.8em
+	        	padding: 2px
+	        	display: block
+	        	color: white
+	        	opacity: 0.8
 	      &:hover .thumbnail-overlay
 	        top: 0
 	        opacity: 1
@@ -182,29 +190,22 @@ body
 					max-height: 400px
 
 
-footer
-	.links
-		width: 90%
-		margin: 0 auto
-		padding-bottom: 2%
+.footer
+	background:
+		image: url("../img/grid.png")
+	text-align: center
+	.icons
+		display: inline-block
+		padding: 10px 20px 10px 20px
 		a
-			font:
-				family: $base-font
-				size: 2em
-			color: $dark-text-color
-			&:hover
-				text-decoration: none
-	padding-bottom: 5%
-	.container
-		margin: 0 auto
-		text-align: center
-		img
-			max-width: 35px
-			min-width: 20px
-			border-radius: 50%
-			margin: 0 1% 0 1%
-			opacity: 0.9
-			transition: linear 0.1s
-			&:hover
-				opacity: 1
+			float: left
+			padding: 10px
+			img
+				max-width: 35px
+				min-width: 20px
+				border-radius: 50%
+				opacity: 0.9
+				transition: linear 0.1s
+				&:hover
+					opacity: 1
 
