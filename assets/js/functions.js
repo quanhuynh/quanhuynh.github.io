@@ -47,17 +47,27 @@ $(window).scroll(function() {
 
 	var wScroll = $(this).scrollTop();
 
-	$('#name').css({
-    'transform' : 'translate(0px, ' + wScroll/2 + '%)'
-  });
-  $('#slogan').css({
-    'transform' : 'translate(0px, ' + wScroll+ '%)'
-  });
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    
+	} else {
+		$('#name').css({
+    	'transform' : 'translate(0px, ' + wScroll/2 + '%)'
+  	});
+	  $('#slogan').css({
+	    'transform' : 'translate(0px, ' + wScroll+ '%)'
+	  });
+	}
 
+	
+
+	
+
+/*
   if(wScroll > $('.work-slider').offset().top - $(window).height()){
     var offset = Math.min(0, wScroll - $('.work-slider').offset().top + $(window).height()-350);
     $('.left-units').css({'transform': 'translate('+offset+'px, '+ -offset*0.5 +'px)'});
     $('.right-units').css({'transform': 'translate('+Math.abs(offset)+'px, '+Math.abs(offset*0.5)+'px)'});
   }
+*/
 
 })
