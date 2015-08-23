@@ -50,13 +50,22 @@ $(window).scroll(function() {
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     
 	} else {
-		$('#name').css({
-    	'transform' : 'translate(0px, ' + wScroll/2 + '%)'
+		$('.title-container').css({
+    	'transform' : 'translate(0px, ' + wScroll/3 + '%)'
   	});
-	  $('#slogan').css({
-	    'transform' : 'translate(0px, ' + wScroll+ '%)'
-	  });
 	}
+
+	if(wScroll > $('#window-about').offset().top - $(window).height()){
+    var opacity = (wScroll - $('#window-about').offset().top + 300) / (wScroll / 2.25)
+    $('#tint-about').css({'opacity': opacity})
+  }
+
+  if(wScroll > $('#window-work').offset().top - $(window).height()){
+    var opacity = (wScroll - $('#window-work').offset().top + 400) / (wScroll / 3)
+    $('#tint-work').css({'opacity': opacity})
+  }
+
+
 
 	
 

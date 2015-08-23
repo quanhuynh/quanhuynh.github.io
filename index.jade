@@ -22,13 +22,17 @@ html
 					li: a(href="resume.pdf", target="_blank") Résumé
 		
 		.title
-			#name Quan Huynh
-			#slogan Software | Interweb | Tea
+			.title-container
+				#name Quan Huynh
+				#slogan Software | Interweb | Tea
 
 		.actual-content
 			
 			.row.about#about
-				.header.col-xs-12 --- Who I Am ---
+				.window#window-about
+					.tint#tint-about
+						.header-text About
+
 				.col-lg-12#about
 					p Hi there!
 					p I'm Quan, and I'm currently a Computer Science student at the University of California, Berkeley. I have a passion for anything involving software, from web dev to AI. I'm working on side projects right now, but I'm also looking for an opportunity to use my skills in the real world. So please contact me if you are interested. Besides that, I am an active member of the Cal Archery Club and an avid cuber (I solve Rubik's cubes for fun - it is a thing). I also love dystopian novels, fine tea, learning about design methodologies, red velvet desserts, physics, and sudoku puzzles.
@@ -36,9 +40,11 @@ html
 					p <strong> TL;DR </strong> : I code, I shoot arrows, I eat desserts. Nice to meet you!
 
 			.row.work#work
-				.header --- What I Do ---
+				.window#window-work
+					.tint#tint-work
+						.header-text Work
+
 				.work-slider
-					
 					.thumb-wrap
 						.thumbnail-container
 							.left-units

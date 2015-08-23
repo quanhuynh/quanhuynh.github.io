@@ -95,12 +95,36 @@ body
 	background-color: white
 	.row
 		padding: 50px
-	.header
-		padding: 20px 0 20px 0
-		text-align: center
-		font:
-			size: 4.5em
-			weight: 600
+	#window-work
+		background-image: url(../img/peri-work.png)
+	#window-about
+		background-image: url(../img/peri-about.png)		
+	.window
+		margin: 0 auto
+		margin-top: 20px
+		margin-bottom: 30px
+		height: 125px
+		width: 125px
+		background:
+			position: center 0px
+		border-radius: 50%
+		position: relative
+		.tint
+			background-color: black
+			opacity: 0.8
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			.header-text
+				color: white
+				font-weight: 100
+				font-size: 4em
 	.about
 		margin: 0 auto
 		text-align: center
