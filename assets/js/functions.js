@@ -53,17 +53,18 @@ $(window).scroll(function() {
 		$('.title-container').css({
     	'transform' : 'translate(0px, ' + wScroll/3 + '%)'
   	});
+		
+		if(wScroll > $('#window-about').offset().top - $(window).height()){
+	    var opacity = (wScroll - $('#window-about').offset().top + 300) / (wScroll / 2.25)
+	    $('#tint-about').css({'opacity': opacity})
+	  }
+
+	  if(wScroll > $('#window-work').offset().top - $(window).height()){
+	    var opacity = (wScroll - $('#window-work').offset().top + 400) / (wScroll / 3)
+	    $('#tint-work').css({'opacity': opacity})
+	  }
+		
 	}
-
-	if(wScroll > $('#window-about').offset().top - $(window).height()){
-    var opacity = (wScroll - $('#window-about').offset().top + 300) / (wScroll / 2.25)
-    $('#tint-about').css({'opacity': opacity})
-  }
-
-  if(wScroll > $('#window-work').offset().top - $(window).height()){
-    var opacity = (wScroll - $('#window-work').offset().top + 400) / (wScroll / 3)
-    $('#tint-work').css({'opacity': opacity})
-  }
 
 
 
