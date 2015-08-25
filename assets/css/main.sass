@@ -101,10 +101,9 @@ body
 		background-image: url(../img/peri-about.png)		
 	.window
 		margin: 0 auto
-		margin-top: 20px
 		margin-bottom: 30px
-		height: 125px
-		width: 125px
+		height: 12em
+		width: 12em
 		background:
 			position: center 0px
 		border-radius: 50%
@@ -125,6 +124,7 @@ body
 				color: white
 				font-weight: 100
 				font-size: 4.5em
+
 	.about
 		margin: 0 auto
 		text-align: center
@@ -143,19 +143,17 @@ body
 			font-size: 8em
 			padding: 50px
 
-	.work //work
-		overflow-x: hidden
 
+	.work
+		overflow-x: hidden
 	.work-slider
 		width: 200%
 		position: relative
 		left: 0%
 		transition: linear 0.3s
-
 		.thumb-wrap, .work-wrap
 			width: 50%
 			float: left
-
 		.thumbnail-container
 	    max-width: 80%
 	    margin: 0 auto
@@ -201,7 +199,6 @@ body
 	        opacity: 1
 	      @media screen and (max-width: 1200px)
 	      	height: 300px
-
 		.work-container
 			max-width: 600px
 			margin: 0 auto
@@ -250,26 +247,28 @@ body
 
 
 .footer
+	height: 40vh
 	background:
 		image: url("../img/grid.png")
+		attachment: fixed
 	text-align: center
 	.icons
 		display: inline-block
-		padding: 10px 20px 10px 20px
+		padding-top: 40px
 		a
 			float: left
-			padding: 10px
+			padding: 10px 10px 0 10px
 			img
-				max-width: 35px
-				min-width: 20px
+				max-width: 7vh
+				min-width: 5vh
 				border-radius: 50%
-				opacity: 0.9
 				transition: linear 0.1s
 				&:hover
-					opacity: 1
+					transform: translate(0, -4px)
 	.closing
-		font-size: 2em
-		padding-bottom: 20px
+		bottom: 40
+		font-size: 4vh
+		padding: 5vh
 	@media screen and (max-width: 1200px)
 		.icons
 			padding: 20px 40px 20px 40px
