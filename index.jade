@@ -16,7 +16,7 @@ html
 				img(src="assets/img/head_icon.jpg")
 			.col-sm-11.col-xs-12
 				ul.breadcrumb.text-right
-					li: a(href="#about") About
+					li: a(href="#about-lander") About
 					li: a(href="#work") Work
 					li: a(href="https://medium.com/@quanhuynh96", target="_blank") Blog
 					li: a(href="resume.pdf", target="_blank") Résumé
@@ -24,58 +24,89 @@ html
 		.title
 			.title-container
 				#name Quan Huynh
-				#slogan Software | Interweb | Tea
+				#slogan Software and Interweb Enthusiast
 
 		.actual-content
 			
-			.row.about#about
+			.row.about#about-lander
 				.window#window-about
 					.tint#tint-about
 						.header-text About
 
-				.col-lg-12#about
-					p Hi there!
-					p I'm Quan, and I'm currently a Computer Science student at the University of California, Berkeley. I have a passion for anything involving software, from web dev to AI. I'm working on side projects right now, but I'm also looking for an opportunity to use my skills in the real world. So please contact me if you are interested. Besides that, I am an active member of the Cal Archery Club and an avid cuber (I solve Rubik's cubes for fun - it is a thing). I also love fine tea, learning about design methodologies, desserts, and sudoku puzzles.
-					p If you'd like to get in touch with me for work or just to say hi, leave me a <a href="mailto:quanhuynh@berkeley.edu" target="_blank"> <strong> message! </strong> </a>
-					p <strong> TL;DR </strong> : I code, I shoot arrows, I eat desserts. Nice to meet you!
-
+				.col-lg-12.main-about
+					h3 I am a student from UC Berkeley and I'm interested in software, from making websites to algorithms. <a href="mailto:quanhuynh96@berkeley.edu"><strong>Hit me up</strong></a>.
+					
+					.about-unit
+						h1 What I do
+						.col-sm-4.col-xs-12
+							img(src="assets/img/code2.png")
+							h2 <strong> Code </strong>
+							p Spending time turning quality sleep into quality code. I program in mostly Java and Python, but would love exposure to more languages.
+						.col-sm-4.col-xs-12
+							img(src="assets/img/brush.png")
+							h2 <strong> Design </strong>
+							p Tinkering and playing with pixels to make pretty pictures. I use Adobe Photoshop to create icons, thumbnails, wireframes, mockups, etc. 
+						.col-sm-4.col-xs-12
+							img(src="assets/img/code.png")
+							h2 <strong> Develop </strong>
+							p Making the interweb a bit prettier, one website at a time. My web dev toolkit includes HTML, CSS, JavaScript, Bootstrap, and SASS.
+					
+					.about-unit
+						h1 What I also do (in my free time)
+						.col-sm-4.col-xs-12
+							img(src="assets/img/archery.png")
+							p I am an active member of Cal Archery and I help teach an archery class at UC Berkeley.
+						.col-sm-4.col-xs-12
+							img(src="assets/img/sudoku.png")
+							p I solve sudoku puzzles for fun sometimes.
+						.col-sm-4.col-xs-12
+							img(src="assets/img/book.png")
+							p I enjoy a wide range of novels, particularly from Stephen King and Arthur Conan Doyle.  
+							
 			.row.work#work
 				.window#window-work
 					.tint#tint-work
 						.header-text Work
 
-				.work-slider
-					.thumb-wrap
-						.thumbnail-container
-							.thumbnail-unit(data-folder="work-0", style="background-image: url(assets/img/work/work-0/thumbnail.png)")
-								.thumbnail-overlay
-									strong CodeSaver
-									p Code storage application
-
-							.thumbnail-unit(data-folder="work-1", style="background-image: url(assets/img/work/work-1/thumbnail.png)")
-								.thumbnail-overlay
-									strong PresentText
-									p Text-highlight Chrome extension
-	
-							.thumbnail-unit(data-folder="work-2", style="background-image: url(assets/img/work/work-2/thumbnail.png)")
-								.thumbnail-overlay
-									strong MC Nails
-									p Static web page for local business
-
-							.thumbnail-unit(data-folder="work-3", style="background-image: url(assets/img/work/work-3/thumbnail.png)")
-								.thumbnail-overlay
-									strong DailyProgrammer
-									p Personal coding portfolio
+				.work-content
+					.col-xs-12.work-unit
+						.work-title CodeSaver
+						.col-lg-6.col-md-12.
+						.col-lg-6.col-md-12.work-description 
+							p Code storage application built to store snippets of code for easy access and classification.
+							p The application features a GUI and accessible information on each run using a database.
+							p Made with Java and some MySQL through the JDBC API
+							a(href="http://github.com/quanhuynh/CodeSaver", target="_blank").more-button Details
 					
+					hr
+
+					.col-xs-12.work-unit
+						.work-title PresentText
+						.col-lg-6.col-md-12.
+						.col-lg-6.col-md-12.work-description
+							p A Chrome extension putting focus on smaller passages for easy reading or presentation. 
+							p This is a simple extension that darkens the page (high opacity dark layover) leaving the highlighted portion for easy reading. Built with JavaScript.
+							a(href="http://github.com/quanhuynh/PresentText", target="_blank").more-button Details
 					
-					.work-wrap
-						.work-container
-							.work-return
-								img(src="assets/img/return.png")
-							h4.project-title
-								//insert title based on thumbnail title
-							div.project-load
-								//load html as a separate workpage
+					hr
+
+					.col-xs-12.work-unit
+						.work-title MC Nails
+						.col-lg-6.col-md-12
+						.col-lg-6.col-md-12.work-description 
+							p Static website for a local beauty business in Fairfax, VA.
+							p I made this website for free as my first professional (kind of) web dev project. The site features basic information including hours, location, services, etc.
+							a(href="http://mcnails.org", target="_blank").more-button Visit site
+
+					hr
+
+					.col-xs-12.work-unit
+						.work-title DailyProgrammer
+						.col-lg-6.col-md-12
+						.col-lg-6.col-md-12.work-description 
+							p Code portfolio consisting of mini-projects at different levels of difficulty, from a small application to a simulator or a game
+							p My personal portfolio of solutions to some challenges of the DailyProgrammer subreddit. I have taken inspiration from some problems and extended them to create my own projects, such as an interactive Conway's Game of Life and a Langton's Ant simulator.
+							a(href="http://github.com/quanhuynh/DailyProgrammer", target="_blank").more-button Details
 
 		.footer.col-xs-12
 
@@ -90,4 +121,5 @@ html
 
 		script(src="https://code.jquery.com/jquery-2.1.3.min.js")
 		script(src="assets/js/nicescroll/jquery.nicescroll.js")
+		script(src="assets/js/jquery.tinycarousel.min.js")
 		script(src="assets/js/functions.js")
