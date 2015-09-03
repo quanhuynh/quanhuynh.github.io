@@ -24,7 +24,7 @@ html
 		.title
 			.title-container
 				#name Quan Huynh
-				#slogan Software and Interweb Enthusiast
+				#slogan Software | Interweb | Design
 
 		.actual-content
 			
@@ -34,25 +34,25 @@ html
 						.header-text About
 
 				.col-lg-12.main-about
-					h3 I am a student from UC Berkeley and I'm interested in software, from making websites to algorithms. <a href="mailto:quanhuynh96@berkeley.edu"><strong>Hit me up</strong></a>.
+					.summary I am a student from UC Berkeley and I'm interested in software, from making websites to algorithms. <a href="mailto:quanhuynh96@berkeley.edu"><strong>Hit me up</strong></a>.
 					
 					.about-unit
-						h1 What I do
+						.about-heading What I do
 						.col-sm-4.col-xs-12
 							img(src="assets/img/code2.png")
-							h2 <strong> Code </strong>
-							p Spending time turning quality sleep into quality code. I program in mostly Java and Python, but would love exposure to more languages.
+							.sub <strong> Code </strong>
+							p I spend time turning quality sleep into quality code. I like programming in Java and Python.
 						.col-sm-4.col-xs-12
 							img(src="assets/img/brush.png")
-							h2 <strong> Design </strong>
-							p Tinkering and playing with pixels to make pretty pictures. I use Adobe Photoshop to create icons, thumbnails, wireframes, mockups, etc. 
+							.sub <strong> Design </strong>
+							p I play with pixels on Photoshop to create pretty pictures, icons, wireframes, etc.
 						.col-sm-4.col-xs-12
 							img(src="assets/img/code.png")
-							h2 <strong> Develop </strong>
-							p Making the interweb a bit prettier, one website at a time. My web dev toolkit includes HTML, CSS, JavaScript, Bootstrap, and SASS.
+							.sub <strong> Develop </strong>
+							p I try to make the interweb a beautiful place, one site at a time, using HTML, CSS, JS, and Bootstrap.
 					
 					.about-unit
-						h1 What I also do (in my free time)
+						.about-heading What I also do (in my free time)
 						.col-sm-4.col-xs-12
 							img(src="assets/img/archery.png")
 							p I am an active member of Cal Archery and I help teach an archery class at UC Berkeley.
@@ -61,7 +61,7 @@ html
 							p I solve sudoku puzzles for fun sometimes.
 						.col-sm-4.col-xs-12
 							img(src="assets/img/book.png")
-							p I enjoy a wide range of novels, particularly from Stephen King and Arthur Conan Doyle.  
+							p I enjoy a wide set of novels and my favorite author is Arthur Conan Doyle.
 							
 			.row.work#work
 				.window#window-work
@@ -71,10 +71,12 @@ html
 				.work-content
 					.col-xs-12.work-unit
 						.work-title CodeSaver
-						.col-lg-6.col-md-12.
+						.col-lg-6.col-md-12
+							img(src="http://fillmurray.com/301/300")
+							p.holder (I'm still working on real pictures, so meanwhile enjoy Bill Murray)
 						.col-lg-6.col-md-12.work-description 
 							p Code storage application built to store snippets of code for easy access and classification.
-							p The application features a GUI and accessible information on each run using a database.
+							p The application features a simple interactive GUI and accessible information on each run by connecting to a local database.
 							p Made with Java and some MySQL through the JDBC API
 							a(href="http://github.com/quanhuynh/CodeSaver", target="_blank").more-button Details
 					
@@ -82,10 +84,13 @@ html
 
 					.col-xs-12.work-unit
 						.work-title PresentText
-						.col-lg-6.col-md-12.
+						.col-lg-6.col-md-12
+							img(src="http://fillmurray.com/301/301")
+							p.holder (I'm still working on real pictures, so meanwhile enjoy Bill Murray)
 						.col-lg-6.col-md-12.work-description
 							p A Chrome extension putting focus on smaller passages for easy reading or presentation. 
-							p This is a simple extension that darkens the page (high opacity dark layover) leaving the highlighted portion for easy reading. Built with JavaScript.
+							p This is a simple extension that darkens the page (high opacity dark layover) leaving the highlighted portion for easy reading. 
+							p Built with JavaScript.
 							a(href="http://github.com/quanhuynh/PresentText", target="_blank").more-button Details
 					
 					hr
@@ -93,9 +98,12 @@ html
 					.col-xs-12.work-unit
 						.work-title MC Nails
 						.col-lg-6.col-md-12
+							img(src="http://fillmurray.com/302/301")
+							p.holder (I'm still working on real pictures, so meanwhile enjoy Bill Murray)
 						.col-lg-6.col-md-12.work-description 
 							p Static website for a local beauty business in Fairfax, VA.
 							p I made this website for free as my first professional (kind of) web dev project. The site features basic information including hours, location, services, etc.
+							p The site is framed in Bootstrap with a responsive design. jQuery and a bit of AngularJS was also used.
 							a(href="http://mcnails.org", target="_blank").more-button Visit site
 
 					hr
@@ -103,9 +111,12 @@ html
 					.col-xs-12.work-unit
 						.work-title DailyProgrammer
 						.col-lg-6.col-md-12
+							img(src="http://fillmurray.com/302/302")
+							p.holder (I'm still working on real pictures, so meanwhile enjoy Bill Murray)
 						.col-lg-6.col-md-12.work-description 
-							p Code portfolio consisting of mini-projects at different levels of difficulty, from a small application to a simulator or a game
+							p Code portfolio consisting of mini-projects at different levels of difficulty, from a small application to a simulator or a game.
 							p My personal portfolio of solutions to some challenges of the DailyProgrammer subreddit. I have taken inspiration from some problems and extended them to create my own projects, such as an interactive Conway's Game of Life and a Langton's Ant simulator.
+							p Most projects are done in Java and Python, although I plan to use it as a way to learn new languages.
 							a(href="http://github.com/quanhuynh/DailyProgrammer", target="_blank").more-button Details
 
 		.footer.col-xs-12
@@ -116,7 +127,7 @@ html
 				a(href="http://linkedin.com/in/quanhuynh", target="_blank"): img(src="assets/img/in_icon.jpg")
 				a(href="mailto:quanhuynh96@berkeley.edu", target="_blank"): img(src="assets/img/mail_icon.png")
 			.closing.col-xs-12
-				p Website and all components created by me, with love  	&#60;3
+				p Website and all components created by me, with love	&#60;3
 				p Bootstrap, SASS, and JS
 
 		script(src="https://code.jquery.com/jquery-2.1.3.min.js")

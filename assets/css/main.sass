@@ -52,7 +52,7 @@ body
 		.breadcrumb
 			margin: 40px 0 0 100px 
 			li
-				font-size: 5em
+				font-size: 6em
 
 
 .title
@@ -92,7 +92,7 @@ body
 	background-color: white
 	.row
 		width: 100vw
-		padding: 70px 0 70px 0
+		padding: 40px 0 40px 0
 		display: inline-block
 	#window-work
 		background-image: url(../img/peri-work.png)
@@ -119,10 +119,9 @@ body
 			display: flex
 			justify-content: center
 			align-items: center
-			transition: 0.2s ease-in
 			.header-text
 				color: white
-				font-weight: 100
+				font-weight: bold
 				font-size: 6em
 
 	.about
@@ -132,27 +131,49 @@ body
 		margin: 0 auto
 		text-align: center
 		.main-about
+			.summary
+				font-size: 2em
 			a
 				color: black
 				&:hover
 					text-decoration: none
 			.about-unit
 				display: inline-block
-				padding-bottom: 50px
+				padding-top: 25px
 				img
 					max-height: 100px
 					max-width: 100px
 				p
 					opacity: 0.8
 					font-size: 2em
-				h1
-					padding: 10px
-				h2
+
+				.about-heading
+					padding: 15px
+					font-size: 3.5em
+				.sub
+					font-size: 2.5em
 					margin: 0
 					padding: 10px 0 10px 0
 	@media screen and (max-width: 1200px)
 		.row
 			padding-bottom: 70px
+			display: inline-block
+		.about
+			display: inline-block
+			min-height: 40vh
+			.main-about
+				.summary
+					font-size: 3em
+				.about-unit
+					p
+						font-size: 3em
+					img
+						max-height: 120px
+						max-width: 120px
+					.about-heading
+						font-size: 4em
+					.sub
+						font-size: 3.5em
 		.header
 			font-size: 8em
 			padding: 50px
@@ -170,10 +191,22 @@ body
 				padding: 30px 100px 30px 100px
 				display: inline-block
 				clear: both
+				img
+					display: block
+					margin: auto
+					padding: 10px
+					opacity: 0.9
+					transition: linear 0.1s
+					&:hover
+						opacity: 1
+				.holder
+					text-align: center
+					font-size: 1.5em
 				.work-title
 					padding-left: 50px
 					margin: 0 auto
 					font-size: 5em
+					font-weight: bold
 				.work-description
 					padding: 20px 0 20px 0
 					font-size: 2em
@@ -193,40 +226,24 @@ body
 						&:hover
 							text-decoration: none
 
-			.dark-background
-				color: $bright-text-color
-				.content-container
-					.work-description
-						.more-button
-							border: medium solid $bright-text-color
-							&:hover
-								color: $dark-text-color
-								background: $bright-text-color
-
 		@media screen and (max-width: 1200px)
 			.work-content
 				.work-unit
-					min-height: 100vh
+					min-height: 45vh
 					display: inline-block
 					clear: both
-					.project-title
+					.work-title
 						width: 100%
 						text-align: center
 						font-size: 4em
-						padding: 50px 50px 10px 50px
-					.content-container
-						.work-thumbnail
-							width: 50%
-							margin: 0 auto
-							img
-								max-width: 100%
-								border-radius: 10px
-						.work-description
-							padding-top: 20px
-							font-size: 2em
+						padding: 50px 50px 10px 10px
+					img
+						padding: 15px
+					.holder
+						font-size: 1em
 
 .footer
-	min-height: 40vh
+	min-height: 20vh
 	display: inline-block
 	background:
 		image: url("../img/grid.png")
