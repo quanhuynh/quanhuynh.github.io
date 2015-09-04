@@ -72,8 +72,7 @@ html
 					.col-xs-12.work-unit
 						.work-title CodeSaver
 						.col-lg-6.col-md-12
-							img(src="http://fillmurray.com/301/300")
-							p.holder (I'm still working on real pictures, so meanwhile enjoy Bill Murray)
+							img(src="assets/img/work0.png")
 						.col-lg-6.col-md-12.work-description 
 							p Code storage application built to store snippets of code for easy access and classification.
 							p The application features a simple interactive GUI and accessible information on each run by connecting to a local database.
@@ -85,11 +84,11 @@ html
 					.col-xs-12.work-unit
 						.work-title PresentText
 						.col-lg-6.col-md-12
-							img(src="http://fillmurray.com/301/301")
-							p.holder (I'm still working on real pictures, so meanwhile enjoy Bill Murray)
+							img(src="assets/img/work1.png")
 						.col-lg-6.col-md-12.work-description
 							p A Chrome extension putting focus on smaller passages for easy reading or presentation. 
-							p This is a simple extension that darkens the page (high opacity dark layover) leaving the highlighted portion for easy reading. 
+							p The extension works by darkening the page (a dark layover with high opacity and high z-index is injected into the page's html) leaving the highlighted portion for easy reading. 
+							p The layover is made up of four blocks of rectangles and is responsive, meaning it will keep on a selected passage when the user scrolls.
 							p Built with JavaScript.
 							a(href="http://github.com/quanhuynh/PresentText", target="_blank").more-button Details
 					
@@ -98,8 +97,7 @@ html
 					.col-xs-12.work-unit
 						.work-title MC Nails
 						.col-lg-6.col-md-12
-							img(src="http://fillmurray.com/302/301")
-							p.holder (I'm still working on real pictures, so meanwhile enjoy Bill Murray)
+							img(src="assets/img/work2.png")
 						.col-lg-6.col-md-12.work-description 
 							p Static website for a local beauty business in Fairfax, VA.
 							p I made this website for free as my first professional (kind of) web dev project. The site features basic information including hours, location, services, etc.
@@ -111,16 +109,18 @@ html
 					.col-xs-12.work-unit
 						.work-title DailyProgrammer
 						.col-lg-6.col-md-12
-							img(src="http://fillmurray.com/302/302")
-							p.holder (I'm still working on real pictures, so meanwhile enjoy Bill Murray)
+							img(src="assets/img/work3.png")
 						.col-lg-6.col-md-12.work-description 
-							p Code portfolio consisting of mini-projects at different levels of difficulty, from a small application to a simulator or a game.
-							p My personal portfolio of solutions to some challenges of the DailyProgrammer subreddit. I have taken inspiration from some problems and extended them to create my own projects, such as an interactive Conway's Game of Life and a Langton's Ant simulator.
-							p Most projects are done in Java and Python, although I plan to use it as a way to learn new languages.
+							p Code portfolio consisting of mini-projects at different levels of difficulty.
+							p My personal portfolio of solutions to some challenges of the DailyProgrammer subreddit. I have taken inspiration and extended some problems to create my own projects, such as an interactive Conway's Game of Life and a Langton's Ant simulator. The image here shows my version of Minesweeper and a result of Langton's Ant (this one was taken after 12 millions LA generations)
+							p Most projects are done in Java and Python, although that will change as I expand my toolkit.
 							a(href="http://github.com/quanhuynh/DailyProgrammer", target="_blank").more-button Details
 
-		.footer.col-xs-12
+		#contact.col-xs-12
+			h1 Interested in working with me? Want to say hi?
+			h3 <a href="mailto:quanhuynh96@berkeley.edu", target="_blank"> Leave me a message <strong></strong></a>
 
+		.footer.col-xs-12
 			.icons
 				a(href="http://github.com/quanhuynh", target="_blank"): img(src="assets/img/github.png")
 				a(href="http://facebook.com/quanwuin", target="_blank"): img(src="assets/img/fb_icon.png")
@@ -128,9 +128,6 @@ html
 				a(href="mailto:quanhuynh96@berkeley.edu", target="_blank"): img(src="assets/img/mail_icon.png")
 			.closing.col-xs-12
 				p Website and all components created by me, with love	&#60;3
-				p Bootstrap, SASS, and JS
 
 		script(src="https://code.jquery.com/jquery-2.1.3.min.js")
-		script(src="assets/js/nicescroll/jquery.nicescroll.js")
-		script(src="assets/js/jquery.tinycarousel.min.js")
 		script(src="assets/js/functions.js")

@@ -35,7 +35,7 @@ body
 		li
 			float: left
 			font:
-				size: 3em
+				size: 3.5em
 				weight: 500
 			text-shadow: $text-shadow
 		a
@@ -71,13 +71,13 @@ body
 		display: inline-block
 		padding: 15px
 		font:
-			size: 9em
+			size: 10em
 			weight: 600
 		border: 7px solid $bright-text-color
 	#slogan
 		padding: 15px
 		font:
-			size: 4em
+			size: 5em
 	@media screen and (max-width: 1200px)
 		#name
 			font-size: 15em
@@ -132,7 +132,7 @@ body
 		text-align: center
 		.main-about
 			.summary
-				font-size: 2em
+				font-size: 2.3em
 			a
 				color: black
 				&:hover
@@ -145,7 +145,7 @@ body
 					max-width: 100px
 				p
 					opacity: 0.8
-					font-size: 2em
+					font-size: 2.3em
 
 				.about-heading
 					padding: 15px
@@ -209,7 +209,7 @@ body
 					font-weight: bold
 				.work-description
 					padding: 20px 0 20px 0
-					font-size: 2em
+					font-size: 2.5em
 					.more-button
 						float: right
 						margin-right: 10vw
@@ -242,6 +242,29 @@ body
 					.holder
 						font-size: 1em
 
+#contact
+	z-index: -100
+	display: inline-block
+	padding: 15px 0 15px 0
+	background: #cccccc
+	text-align: center
+	transform: translate(-100vw, 0)
+	opacity: 0
+	transition: 0.5s ease-out
+	h3
+		display: inline-block
+		border: medium solid $dark-text-color
+		transition: linear 0.1s
+		padding: 5px
+		&:hover
+			background: $dark-text-color
+	a
+		color: $dark-text-color
+		transition: linear 0.1s
+		&:hover
+			text-decoration: none
+			color: $bright-text-color
+
 .footer
 	min-height: 20vh
 	display: inline-block
@@ -256,14 +279,14 @@ body
 			float: left
 			padding: 10px 10px 0 10px
 			img
-				max-width: 50px
+				max-width: 60px
 				min-width: 30px
 				border-radius: 50%
 				transition: linear 0.1s
 				&:hover
 					transform: translate(0, -4px)
 	.closing
-		font-size: 2em
+		font-size: 2.3em
 		padding: 30px
 	@media screen and (max-width: 1200px)
 		height: 300px
@@ -272,7 +295,7 @@ body
 			a
 				padding: 15px
 				img
-					max-width: 50px
+					max-width: 60px
 					min-width: 40px
 		.closing
 			padding: 5px

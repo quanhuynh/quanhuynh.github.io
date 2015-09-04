@@ -1,7 +1,5 @@
 $(function() {
 	smoothScroll(1000);
-	workContainer();
-	workLoad();
 })
 
 function smoothScroll (duration) {
@@ -36,9 +34,14 @@ $(window).scroll(function() {
 
 	  if(wScroll > $('#window-work').offset().top - $(window).height()){
 	    var opacity = (wScroll - $('#window-work').offset().top + 500) / (wScroll / 3.6)
-	    $('#tint-work').css({'opacity': opacity})
+	    $('#tint-work').css({'opacity': opacity});
 	  }
 		
+	}
+
+	if (wScroll > $('#contact').offset().top-($(window).height() / 1.2)) {
+		$('#contact').css({'transform': 'translate(0, 0)'});
+		$('#contact').css({'opacity': '1'});
 	}
 
 })
