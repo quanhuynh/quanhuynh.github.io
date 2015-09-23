@@ -1,0 +1,24 @@
+img(src="../../assets/img/work/work-0/img0.jpg", alt="CodeSaver")
+
+h3.text-left <strong> About </strong>
+h5.text-left CodeSaver is an application built with Java Swing and MySQL with the purpose of storing code snippets for easy access. The inspiration comes from personal experience, that sometimes, it's useful to have a general code snippet ready for reference, rather than having to look it up in another file or even project.
+h5.text-left It makes the implementation process in a project much more easy and personal, tailored to the user's need.
+
+img(src="../../assets/img/work/work-0/img1.jpg", alt="CodeSaver")
+img(src="../../assets/img/work/work-0/img2.jpg", alt="CodeSaver")
+
+
+h3.text-left <strong> Design and Implementation </strong>
+h5.text-left CodeSaver connects a MySQL database's information to a GUI implemented in Java Swing. Initially, on the first run, the application creates an empty table of code snippets. All information, such as name, category, code, etc. are stored as String in Java and VARCHAR in MySQL. Multiple classes were implemented with different purposes. For example, a DBMS class deals with establishing connections and queries to the database, while a MainFrame class establishes the GUI.
+h5.text-left On each run, the GUI pulls data from existing content in the table and represents them on the GUI, as snippets sorted by categories. The exact implementation of the application also required snippets to be objects for easy access to information.
+
+img(src="../../assets/img/work/work-0/img3.jpg", alt="CodeSaver")
+img(src="../../assets/img/work/work-0/img4.jpg", alt="CodeSaver")
+
+
+h3.text-left <strong> What I Learned </strong>
+h5.text-left CodeSaver was my first Java GUI project using Java Swing (and a bit of SwingX). It was an eye-opening experience, as Java Swing is much more sophisticated and complex than all other GUI platforms I have used. This project also required me to implement an involved backend to go along with the GUI, as the application interacts with data in a MySQL table. 
+h5.text-left I found it very fascinating to work with SQL in a Java environment using JDBC API (Java Database Connectivity API). JDBC is very helpful in an application where data is necessary and simply serializing or using many data structures won't do (space effiency reasons). However, I think that the connection process to a SQL database is very intricate and depends a lot on external set up (MySQL's J Connector for example), and I am still not completely comfortable with the nooks and cranies of it.
+h5.text-left I think the project was excellent in exposing me to a different corner of Java, one dealing with SQL data and GUI. I have learned a lot, and I do hope that the application would also serve me well in the future. 
+
+h5.text-left If you would like to check out the source code for the application, visit the <a href="http://github.com/quanhuynh/CodeSaver"> <strong> Github repository</strong> </a>. 

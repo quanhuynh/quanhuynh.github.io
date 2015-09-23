@@ -1,132 +1,304 @@
-@import ../../includes/standard.sass
+$base-font: 'Dosis', sans-serif;
+$bright-text-color:  #E6E6E6
+$dark-text-color: #0c1D2C
+$text-shadow: 0.5px 0.5px 0.5px #929491
+$title-bg: #454659
 
-#picture
-	text-align: center
-	padding: 5% 0 0 0
+body
+	position: relative
+	overflow-x: hidden
+	margin: 0px
+	padding: 0px
+	font-size: 10px
+	color: $dark-text-color
+	font-family: $base-font
+
+::selection
+	background: black
+	color: white
+::-moz-selection
+	background: black
+	color: white
+
+.top-nav
 	img
-		max-width: 15%
-
-.title
-	color: $text-color
-	text-align: center
-	#name
-		padding: 1%
-		text-shadow: $text-shadow
-		font:
-			family: $base-font
-			size: 5em
-			weight: 600
-	#slogan
-		opacity: 0.7
-		font:
-			family: $base-font
-			size: 2.5em
-
-.breadcrumb
-	background: transparent
-	float: right
-	height: 10%
-	li
+		max-width: 80px
+		border-radius: 50%
+		margin: 20px 0 0 20px
+	.breadcrumb
+		position: relative
+		background: transparent
 		float: left
-		font-size: 2em
-		font-family: $base-font
-		font-weight: 500
-		text-shadow: $text-shadow
-	a
-		color: $text-color
-		opacity: 0.8
-		transition: linear 0.1s
-		&:hover
-			text-decoration: none
-			opacity: 1
-
-.divider
-	width: 100%
-	height: 2px
-	margin: 0 auto
-	border-radius: 50%
-	background: #703030
-	margin-bottom: 3%
-	padding-bottom: 0.4%
-
-.actual-content
-	width: 85%
-	margin: 0 auto
-	text-align: center
-	padding-bottom: 5%
-	#content-picture
-		padding: 2%
-		margin-top: 1%
-		img
-			max-width: 75%
-			border-radius: 50%
-			border: medium #703030 solid
-	#about
-		text-align: left
-		padding-top: 2%
-		font:
-			family: $base-font
-			size: 1.4em
-			weight: 600
-			color: $text-color
-		opacity: 0.8
-
-#work
-	width: 90%
-	margin: 0 auto
-	padding: 5% 0 5% 0
-	p
-		text-shadow: $text-shadow
-		font:
-			family: $base-font
-			size: 3.5em
-			weight: 600
-	.workpiece
-		a
-			&:hover
-				text-decoration: none
-			.thumbnail
-				img
-					max-width: 100%
-				transition: 0.1s linear
-				&:hover
-					background-color: #E6E6E6
-		.caption
-			.heading
-				font:
-					size: 2em
-				text-shadow: none
-			.info
-				font:
-					size: 1.5em
-				text-shadow: none
-		.thumbnail
-			img
-				max-width: 70%
-
-footer
-	.links
-		width: 90%
-		margin: 0 auto
-		padding-bottom: 2%
-		a
+		height: 10%
+		z-index: 100
+		margin-top: 20px
+		li
+			float: left
 			font:
-				family: $base-font
-				size: 2em
-			color: $text-color
-			&:hover
-				text-decoration: none
-	padding-bottom: 5%
-	.container
-		margin: 0 auto
-		text-align: center
-		img
-			max-width: 35px
-			min-width: 20px
-			border-radius: 50%
-			margin: 0 1% 0 1%
-			opacity: 0.9
+				size: 3.5em
+				weight: 500
+			text-shadow: $text-shadow
+		a
+			color: $bright-text-color
+			opacity: 0.8
 			transition: linear 0.1s
 			&:hover
+				text-decoration: none
 				opacity: 1
+	@media screen and (max-width: 1200px)
+		img
+			max-width: 120px
+			margin: 40px 0 0 40px
+		.breadcrumb
+			margin: 40px 0 0 100px 
+			li
+				font-size: 6em
+
+
+.title
+	background: 
+		color: $dark-text-color
+		//image: url("../img/bg.jpg")
+		//attachment: fixed
+		//position: top center
+		//size: cover
+	padding-top: 40vh
+	padding-bottom: 35vh
+	color: $bright-text-color
+	text-align: center
+	transition: linear 0.2s
+	position: relative
+	z-index: -100
+	#name
+		display: inline-block
+		padding: 15px
+		font:
+			size: 10em
+			weight: 600
+		border: 7px solid $bright-text-color
+	#slogan
+		padding: 15px
+		font:
+			size: 5em
+	@media screen and (max-width: 1200px)
+		#name
+			font-size: 15em
+			border: 12px solid $bright-text-color
+			padding: 25px
+		#slogan
+			font-size: 5em
+			padding: 25px
+
+	
+.actual-content
+	background-color: white
+	.row
+		width: 100vw
+		padding: 40px 0 40px 0
+		display: inline-block
+	#window-work
+		background-image: url(../img/peri-work.png)
+	#window-about
+		background-image: url(../img/peri-about.png)		
+	.window
+		margin: 0 auto
+		margin-bottom: 50px
+		height: 15em
+		width: 15em
+		background:
+			position: center 0px
+		border-radius: 50%
+		position: relative
+		.tint
+			background-color: black
+			opacity: 0.8
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			.header-text
+				color: white
+				font-weight: bold
+				font-size: 5em
+
+	.about
+		padding-right: 8vw
+		padding-left: 8vw
+		min-height: 100vh
+		margin: 0 auto
+		text-align: center
+		.main-about
+			.summary
+				font-size: 2.3em
+			a
+				color: black
+				&:hover
+					text-decoration: none
+			.about-unit
+				display: inline-block
+				padding-top: 25px
+				img
+					max-height: 100px
+					max-width: 100px
+				p
+					opacity: 0.8
+					font-size: 2.3em
+
+				.about-heading
+					padding: 15px
+					font-size: 3.5em
+				.sub
+					font-size: 2.5em
+					margin: 0
+					padding: 10px 0 10px 0
+	@media screen and (max-width: 1200px)
+		.row
+			padding-bottom: 70px
+			display: inline-block
+		.about
+			display: inline-block
+			min-height: 40vh
+			.main-about
+				.summary
+					font-size: 3em
+				.about-unit
+					p
+						font-size: 3em
+					img
+						max-height: 120px
+						max-width: 120px
+					.about-heading
+						font-size: 4em
+					.sub
+						font-size: 3.5em
+		.header
+			font-size: 8em
+			padding: 50px
+
+
+	.work
+		overflow: hidden
+		.work-content
+			transition: linear 0.2s
+			hr
+				width: 80%
+				border-color: $dark-text-color
+			.work-unit
+				min-height: 500px
+				padding: 30px 100px 30px 100px
+				display: inline-block
+				clear: both
+				img
+					width: 550px
+					display: block
+					margin: auto
+					padding: 10px
+					opacity: 0.9
+					transition: linear 0.1s
+					&:hover
+						opacity: 1
+				.holder
+					text-align: center
+					font-size: 1.5em
+				.work-title
+					padding-left: 50px
+					margin: 0 auto
+					font-size: 5em
+					font-weight: bold
+				.work-description
+					padding: 20px 0 20px 0
+					font-size: 2.5em
+					.more-button
+						float: right
+						margin-right: 10vw
+						display: inline-block
+						padding: 5px
+						border: medium solid $dark-text-color
+						transition: linear 0.1s
+						cursor: pointer
+						&:hover
+							color: $bright-text-color
+							background: $dark-text-color
+					a
+						color: $dark-text-color
+						&:hover
+							text-decoration: none
+
+		@media screen and (max-width: 1200px)
+			.work-content
+				.work-unit
+					min-height: 45vh
+					display: inline-block
+					clear: both
+					.work-title
+						width: 100%
+						text-align: center
+						font-size: 4em
+						padding: 50px 50px 10px 10px
+					img
+						padding: 15px
+					.holder
+						font-size: 1em
+
+#contact
+	z-index: -100
+	display: inline-block
+	padding: 15px 0 15px 0
+	background: $bright-text-color
+	text-align: center
+	transform: translate(-100vw, 0)
+	opacity: 0
+	transition: 0.5s ease-out
+	a
+		display: inline-block
+		border: medium solid $dark-text-color
+		color: $dark-text-color
+		transition: linear 0.1s
+		padding: 5px
+		&:hover
+			background: $dark-text-color
+			text-decoration: none
+			color: $bright-text-color
+
+.footer
+	min-height: 20vh
+	display: inline-block
+	background:
+		color: $bright-text-color
+		//image: url("../img/grid.png")
+		//attachment: fixed
+	text-align: center
+	.icons
+		display: inline-block
+		padding-top: 40px
+		a
+			float: left
+			padding: 10px 10px 0 10px
+			img
+				max-width: 60px
+				min-width: 30px
+				border-radius: 50%
+				transition: linear 0.1s
+				&:hover
+					transform: translate(0, -4px)
+	.closing
+		font-size: 2.3em
+		padding: 30px
+	@media screen and (max-width: 1200px)
+		height: 300px
+		.icons
+			padding: 20px 40px 20px 40px
+			a
+				padding: 15px
+				img
+					max-width: 60px
+					min-width: 40px
+		.closing
+			padding: 5px
+			font-size: 4em
 
