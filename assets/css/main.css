@@ -4,7 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-size: 10px;
-  color: #0c1D2C;
+  color: #0b2545;
   font-family: "Dosis", sans-serif;
 }
 
@@ -22,6 +22,12 @@ body {
   max-width: 80px;
   border-radius: 50%;
   margin: 20px 0 0 20px;
+  opacity: 0.8;
+  transition: linear 0.2s;
+}
+
+.top-nav img:hover {
+  opacity: 1;
 }
 
 .top-nav .breadcrumb {
@@ -41,7 +47,7 @@ body {
 }
 
 .top-nav .breadcrumb a {
-  color: #E6E6E6;
+  color: #e6e6e6;
   opacity: 0.8;
   transition: linear 0.1s;
 }
@@ -65,10 +71,13 @@ body {
 }
 
 .title {
-  background-color: #0c1D2C;
+  background-image: url("../img/bg.png");
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
   padding-top: 40vh;
   padding-bottom: 35vh;
-  color: #E6E6E6;
+  color: #e6e6e6;
   text-align: center;
   transition: linear 0.2s;
   position: relative;
@@ -79,8 +88,8 @@ body {
   display: inline-block;
   padding: 15px;
   font-size: 10em;
-  font-weight: 600;
-  border: 7px solid #E6E6E6;
+  font-weight: 700;
+  border: 10px solid #e6e6e6;
 }
 
 .title #slogan {
@@ -91,7 +100,7 @@ body {
 @media screen and (max-width: 1200px) {
   .title #name {
     font-size: 15em;
-    border: 12px solid #E6E6E6;
+    border: 12px solid #e6e6e6;
     padding: 25px;
   }
   .title #slogan {
@@ -186,6 +195,7 @@ body {
 .actual-content .about .main-about .about-unit .about-heading {
   padding: 15px;
   font-size: 3.5em;
+  font-weight: 500;
 }
 
 .actual-content .about .main-about .about-unit .sub {
@@ -235,7 +245,7 @@ body {
 
 .actual-content .work .work-content hr {
   width: 80%;
-  border-color: #0c1D2C;
+  border-color: #0b2545;
 }
 
 .actual-content .work .work-content .work-unit {
@@ -280,18 +290,18 @@ body {
   margin-right: 10vw;
   display: inline-block;
   padding: 5px;
-  border: medium solid #0c1D2C;
+  border: medium solid #0b2545;
   transition: linear 0.1s;
   cursor: pointer;
 }
 
 .actual-content .work .work-content .work-unit .work-description .more-button:hover {
-  color: #E6E6E6;
-  background: #0c1D2C;
+  color: #e6e6e6;
+  background: #0b2545;
 }
 
 .actual-content .work .work-content .work-unit .work-description a {
-  color: #0c1D2C;
+  color: #0b2545;
 }
 
 .actual-content .work .work-content .work-unit .work-description a:hover {
@@ -322,7 +332,7 @@ body {
   z-index: -100;
   display: inline-block;
   padding: 15px 0 15px 0;
-  background: #E6E6E6;
+  background: #e6e6e6;
   text-align: center;
   transform: translate(-100vw, 0);
   opacity: 0;
@@ -331,22 +341,22 @@ body {
 
 #contact a {
   display: inline-block;
-  border: medium solid #0c1D2C;
-  color: #0c1D2C;
+  border: medium solid #0b2545;
+  color: #0b2545;
   transition: linear 0.1s;
   padding: 5px;
 }
 
 #contact a:hover {
-  background: #0c1D2C;
+  background: #0b2545;
   text-decoration: none;
-  color: #E6E6E6;
+  color: #e6e6e6;
 }
 
 .footer {
   min-height: 20vh;
   display: inline-block;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   text-align: center;
 }
 

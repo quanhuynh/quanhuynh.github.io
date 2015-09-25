@@ -1,6 +1,6 @@
 $base-font: 'Dosis', sans-serif;
-$bright-text-color:  #E6E6E6
-$dark-text-color: #0c1D2C
+$bright-text-color:  #e6e6e6
+$dark-text-color: #0b2545
 $text-shadow: 0.5px 0.5px 0.5px #929491
 $title-bg: #454659
 
@@ -25,6 +25,10 @@ body
 		max-width: 80px
 		border-radius: 50%
 		margin: 20px 0 0 20px
+		opacity: 0.8
+		transition: linear 0.2s
+		&:hover
+			opacity: 1
 	.breadcrumb
 		position: relative
 		background: transparent
@@ -57,11 +61,10 @@ body
 
 .title
 	background: 
-		color: $dark-text-color
-		//image: url("../img/bg.jpg")
-		//attachment: fixed
-		//position: top center
-		//size: cover
+		image: url("../img/bg.png")
+		attachment: fixed
+		position: top center
+		size: cover
 	padding-top: 40vh
 	padding-bottom: 35vh
 	color: $bright-text-color
@@ -74,8 +77,8 @@ body
 		padding: 15px
 		font:
 			size: 10em
-			weight: 600
-		border: 7px solid $bright-text-color
+			weight: 700
+		border: 10px solid $bright-text-color
 	#slogan
 		padding: 15px
 		font:
@@ -152,6 +155,7 @@ body
 				.about-heading
 					padding: 15px
 					font-size: 3.5em
+					font-weight: 500
 				.sub
 					font-size: 2.5em
 					margin: 0
