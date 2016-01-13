@@ -3,136 +3,23 @@
   <head>
     <title>Quan Huynh</title>
     <meta name="description" content="Quan Huynh's Personal Website">
-    <!-- meta(name="keywords", content="")-->
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:600,700,500,400" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" rel="stylesheet" type="text/css">
+    <!-- link(href='http://fonts.googleapis.com/css?family=VT323', rel='stylesheet', type='text/css')-->
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/page-icon.ico">
   </head>
   <body>
-    <div class="top-nav">
-      <div class="col-sm-1 col-xs-12"><img src="assets/img/head_icon.jpg"></div>
-      <div class="col-sm-11 col-xs-12">
-        <ul class="breadcrumb text-right">
-          <li><a href="#about-lander">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="https://medium.com/@quanhuynh96" target="_blank">Blog</a></li>
-          <li><a href="resume.pdf" target="_blank">Résumé</a></li>
-        </ul>
+    <div class="landing">
+      <div class="aside col-md-6"></div>
+      <div class="intro col-md-6">
+        <div class="picture"><img src="assets/img/headshot.jpg"></div>
+        <div class="name">Quan Huynh</div>
+        <div class="description">I am a student from UC Berkeley with a passion in software and design, from playing with websites to algorithms. Currently in my second year at Berkeley, I plan on graduating in 2017 and becoming a software engineer in the Bay Area.</div>
+        <!--a(href="") tl;dr-->
+        <div class="temp-links"><a href="resume.pdf" target="_blank" class="hover-red-underline">Résumé</a><a href="http://linkedin.com/in/quanhuynh" target="_blank" class="hover-blue-underline">LinkedIn</a><a href="http://github.com/quanhuynh" target="_blank" class="hover-gold-underline">Github</a><a href="https://medium.com/@quanhuynh96" target="_blank" class="hover-paf-underline">Medium</a></div>
       </div>
     </div>
-    <div class="title">
-      <div class="title-container">
-        <div id="name">Quan Huynh</div>
-        <div id="slogan">Software | Design | Interweb</div>
-      </div>
-    </div>
-    <div class="actual-content">
-      <div id="about-lander" class="row about">
-        <div id="window-about" class="window">
-          <div id="tint-about" class="tint">
-            <div class="header-text">About</div>
-          </div>
-        </div>
-        <div class="col-lg-12 main-about">
-          <div class="summary">I am a student from UC Berkeley and I'm interested in software, from making websites to algorithms.</div>
-          <div class="about-unit">
-            <div class="about-heading">What I do</div>
-            <div class="col-sm-4 col-xs-12"><img src="assets/img/code2.png">
-              <div class="sub"><strong> Code </strong></div>
-              <p>I spend time turning quality sleep into quality code. I enjoy programming in Java and Python and am learning web apps.</p>
-            </div>
-            <div class="col-sm-4 col-xs-12"><img src="assets/img/brush.png">
-              <div class="sub"><strong> Design </strong></div>
-              <p>I use Photoshop and Illustrator to make pretty pictures, icons, wireframes, etc.</p>
-            </div>
-            <div class="col-sm-4 col-xs-12"><img src="assets/img/code.png">
-              <div class="sub"><strong> Develop </strong></div>
-              <p>I create websites with HTML, CSS, JS, using Bootstrap and SASS.</p>
-            </div>
-          </div>
-          <div class="about-unit">
-            <div class="about-heading">What I also do</div>
-            <div class="col-sm-4 col-xs-12"><img src="assets/img/archery.png">
-              <p>I am an active member of Cal Archery and help teach an archery class at UC Berkeley.</p>
-            </div>
-            <div class="col-sm-4 col-xs-12"><img src="assets/img/sudoku.png">
-              <p>I solve sudoku puzzles and play with Rubik's cubes for fun sometimes.</p>
-            </div>
-            <div class="col-sm-4 col-xs-12"><img src="assets/img/book.png">
-              <p>I enjoy a variety of sci-fi/dystopian novels (talk to me about Russian literature).</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="work" class="row work">
-        <div id="window-work" class="window">
-          <div id="tint-work" class="tint">
-            <div class="header-text">Work</div>
-          </div>
-        </div>
-        <div class="work-content">
-          <div class="col-xs-12 work-unit">
-            <div class="work-title">Java Matrix Computation Package</div>
-            <div class="col-lg-6 col-md-12"><img src="assets/img/work1.png"></div>
-            <div class="col-lg-6 col-md-12 work-description">
-              <p>Linear algebra package made in Java, for Java. Package contains 25+ methods for working with matrices.</p>
-              <p>Methods include elementary operations like addition, multiplication, to more complex ones like finding inverse, solving matrix equations, row reductions.</p>
-              <p>Project also includes downloadable jar file and online documentation.</p><a href="http://github.com/quanhuynh/matrix-computation-package" target="_blank" class="more-button">Details</a>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <hr>
-          </div>
-          <div class="col-xs-12 work-unit">
-            <div class="work-title">CodeSaver</div>
-            <div class="col-lg-6 col-md-12"><img src="assets/img/work0.png"></div>
-            <div class="col-lg-6 col-md-12 work-description"> 
-              <p>Code storage application built to store snippets of code for easy access and classification.</p>
-              <p>The application features a simple interactive GUI and accessible information on each run by connecting to a local database.</p>
-              <p>Made with Java and some MySQL through the JDBC API</p><a href="http://github.com/quanhuynh/CodeSaver" target="_blank" class="more-button">Details</a>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <hr>
-          </div>
-          <div class="col-xs-12 work-unit">
-            <div class="work-title">MC Nails</div>
-            <div class="col-lg-6 col-md-12"><img src="assets/img/work2.png"></div>
-            <div class="col-lg-6 col-md-12 work-description"> 
-              <p>Static website for a local beauty business in Fairfax, VA.</p>
-              <p>I made this website for free as my first professional (kind of) web dev project. The site features basic information including hours, location, services, etc.</p>
-              <p>The site is framed in Bootstrap with a responsive design. jQuery and a bit of AngularJS was also used.</p><a href="http://mcnails.org" target="_blank" class="more-button">Visit site</a>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <hr>
-          </div>
-          <div class="col-xs-12 work-unit">
-            <div class="work-title">DailyProgrammer</div>
-            <div class="col-lg-6 col-md-12"><img src="assets/img/work3.png"></div>
-            <div class="col-lg-6 col-md-12 work-description"> 
-              <p>Code portfolio consisting of mini-projects at different levels of difficulty.</p>
-              <p>My personal portfolio of solutions to some challenges of the DailyProgrammer subreddit. I have taken inspiration and extended some problems to create my own projects, such as an interactive Conway's Game of Life and a Langton's Ant simulator. The image here shows my version of Minesweeper and a result of Langton's Ant (this one was taken after 12 millions LA generations)</p>
-              <p>Most projects are done in Java and Python, although that will change as I expand my toolkit.</p><a href="http://github.com/quanhuynh/DailyProgrammer" target="_blank" class="more-button">Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="contact" class="col-xs-12">
-      <h1>Interested in working with me? Want to say hi?</h1>
-      <h3><a href="mailto:quanhuynh96@berkeley.edu", target="_blank"> Hit me up <strong></strong></a></h3>
-    </div>
-    <div class="footer col-xs-12">
-      <div class="icons"><a href="http://github.com/quanhuynh" target="_blank"><img src="assets/img/github.png"></a><a href="http://facebook.com/quanwuin" target="_blank"><img src="assets/img/fb_icon.png"></a><a href="http://linkedin.com/in/quanhuynh" target="_blank"><img src="assets/img/in_icon.jpg"></a><a href="mailto:quanhuynh96@berkeley.edu" target="_blank"><img src="assets/img/mail_icon.png"></a></div>
-      <div class="closing col-xs-12">
-        <p>Website and all components created by me, with love	&#60;3</p>
-      </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="assets/js/functions.js"></script>
   </body>
 </html>
