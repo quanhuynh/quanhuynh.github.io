@@ -64,6 +64,7 @@ body a:hover {
   display: flex;
   flex-flow: column wrap;
   align-items: baseline;
+  justify-content: center;
 }
 
 .landing .intro img {
