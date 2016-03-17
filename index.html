@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" rel="stylesheet" type="text/css">
-    <!-- link(href='http://fonts.googleapis.com/css?family=VT323', rel='stylesheet', type='text/css')-->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/page-icon.ico">
   </head>
@@ -16,9 +16,54 @@
       <div class="intro col-md-6"><img src="assets/img/headshot.jpg">
         <div class="name">Quan Huynh</div>
         <div class="description">Hi there! I'm Quan. I am from Northern Virginia and am studying computer science at UC Berkeley. I have a passion for software and design, from playing with websites to algorithms. Currently in my second year at Cal, I plan on graduating in 2017 and becoming a software engineer in the Bay Area.</div>
-        <!--a(href="") tl;dr-->
         <div class="temp-links"><a href="resume.pdf" target="_blank" class="hover-red-underline">Résumé</a><a href="http://linkedin.com/in/quanhuynh" target="_blank" class="hover-blue-underline">LinkedIn</a><a href="http://github.com/quanhuynh" target="_blank" class="hover-gold-underline">Github</a><a href="https://medium.com/@quanhuynh96" target="_blank" class="hover-paf-underline">Medium</a></div>
       </div>
     </div>
+    <div class="main-content">
+      <div class="activity">
+        <div class="title">Things I do</div>
+        <ul>
+          <li data-toggle="collapse" data-target="#content11" class="proj">Tradebook
+            <div id="content11" class="content collapse">
+              <p>Tradebook is a web application made for paper-trading, a form of stock market simulator. The project includes most of a stock market simulator's basic features, such as buying, selling, ask/bid price system, watchlisting, etc. The application includes a simple user account system, where each user can have multiple trade portfolios. Each portfolio has its own set of holdings, account values, and watchlist.</p>
+              <p>The application was built on the MeteorJS framework and uses the Yahoo Finance API for data. Source code <a href="http://github.com/quanhuynh/tradebook"><strong> here </strong> </a>.</p>
+            </div>
+          </li>
+          <li data-toggle="collapse" data-target="#content12" class="proj">Java Matrix Package
+            <div id="content12" class="content collapse">
+              <p>The Java Matrix Package is an external .jar file featuring the Matrix class. This class creates Matrix objects from 2D arrays or single values. The class has 20+ methods for working with matrices, from basic operations like adding, multiplying, to finding inverses, determinants, and row reductions.</p>
+              <p>The .jar file and documentation for methods are available <a href="https://github.com/quanhuynh/matrix-computation-package"> <strong> here </strong> </a>.</p>
+            </div>
+          </li>
+          <li data-toggle="collapse" data-target="#content13" class="proj">CodeSaver
+            <div id="content13" class="content collapse"> 
+              <p>CodeSaver is a desktop application for storing code snippets away for future references.</p>
+              <p>The application was made with Java Swing and the JDBC API to store data with MySQL. Source code <a href="http://github.com/quanhuynh/codesaver"> <strong> here </strong> </a>.</p>
+            </div>
+          </li>
+          <li data-toggle="collapse" data-target="#content14" class="proj">DailyProgrammer
+            <div id="content14" class="content collapse">
+              <p>A series of solutions to coding challenges on the DailyProgrammer subreddit. I have solved simple problems such as returning a pbm format of a string to more challenging ones such as a modified Langton Ant's simulator and a Flappy Bird game visualized by ASCII. All solutions <a href="https://github.com/quanhuynh/DailyProgrammer"> <strong> here </strong> </a>.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="activity">
+        <div class="title">Things I also do</div>
+        <ul>
+          <li data-toggle="collapse" data-target="#content21" class="proj">Design
+            <div id="content21" class="content collapse">Sketching wireframes to making icons, I mainly use Photoshop and Illustrator for my design needs. I'm working on a design portfolio, so stay tuned!</div>
+          </li>
+          <li data-toggle="collapse" data-target="#content22" class="proj">Archery
+            <div id="content22" class="content collapse">I am currently on the competitive Cal Archery Team. We compete nationally throughout the year. I also teach a semesterly beginner archery class for other Cal students.</div>
+          </li>
+          <li data-toggle="collapse" data-target="#content23" class="proj">Russian Literature
+            <div id="content23" class="content collapse">I like dystopian Russian novels :)</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
 </html>

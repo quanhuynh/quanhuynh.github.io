@@ -43,7 +43,8 @@ body a:hover {
 
 .landing {
   display: flex;
-  height: 100vh;
+  height: 101vh;
+  border-bottom: thick solid #008BBA;
 }
 
 .landing .aside {
@@ -52,6 +53,8 @@ body a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: background-image 0.2s ease-in-out;
+  -moz-transition: background-image 0.2s ease-in-out;
+  -o-transition: background-image 0.2s ease-in-out;
   transition: background-image 0.2s ease-in-out;
 }
 
@@ -103,4 +106,46 @@ body a:hover {
 .landing .intro .temp-links a {
   margin-right: 30px;
   transition: linear 0.1s;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-content .activity {
+  padding: 30px 0 0 50px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-content .activity .title {
+  color: #4C4352;
+  padding: 15px 0 15px 0;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.main-content .activity ul {
+  padding-top: 10px;
+  list-style: none;
+}
+
+.main-content .activity ul .proj {
+  padding-bottom: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.main-content .activity ul .proj:before {
+  content: "+ ";
+}
+
+.main-content .activity ul .proj .content {
+  padding-left: 30px;
+  cursor: auto;
+  font-size: 18px;
+  font-weight: 300;
 }
