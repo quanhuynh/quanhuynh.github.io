@@ -44,7 +44,6 @@ body a:hover {
 .landing {
   display: flex;
   height: 101vh;
-  border-bottom: thick solid #008BBA;
 }
 
 .landing .aside {
