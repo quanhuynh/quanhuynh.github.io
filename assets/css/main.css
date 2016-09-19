@@ -46,6 +46,12 @@ body a:hover {
   height: 101vh;
 }
 
+@media screen and (max-width: 992px) {
+  .landing {
+    height: auto;
+  }
+}
+
 .landing .aside {
   padding: 0;
   background-image: url("../img/workstation-day.png");
@@ -118,6 +124,12 @@ body a:hover {
   padding: 30px 0 0 50px;
   width: 70%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .main-content .activity {
+    margin: inherit;
+  }
 }
 
 .main-content .activity .title {
