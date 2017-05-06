@@ -26,26 +26,30 @@ html
 					a(href="resume.pdf", target="_blank").hover-red-underline Résumé
 					a(href="http://linkedin.com/in/quanhuynh", target="_blank").hover-blue-underline LinkedIn
 					a(href="http://github.com/quanhuynh", target="_blank").hover-gold-underline Github
-					//a(href="https://medium.com/@quanhuynh96", target="_blank").hover-paf-underline Medium
+					a(href="https://www.flickr.com/photos/quanzo/", target="_blank").hover-paf-underline Flickr
 		
 		.main-content
 			.activity
 				.title Things I do
 				ul
-						li.proj(data-toggle="collapse", data-target="#content11") Tradebook
+						li.proj(data-toggle="collapse", data-target="#content11") Mitsuba Hair BSDF
 							.content#content11.collapse
+								p For one of my courses at Berkeley, Computer Graphics and Imaging, I worked in a partner to implement a hair rendering BSDF (bidirectional scattering distribution function - a mathematical model telling how light interacts when it scatters from a surface). We based the physical/mathematical model on two papers by Stephen Marschner and Eugene d'Eon.
+								p The project was built as an extension to <a href="https://www.mitsuba-renderer.org/"><strong>Mitsuba</strong></a>, a physically-based renderer. The final report of the project can be viewed <a href="http://quanhuynh.org/hair-bsdf/"> <strong> online </strong> </a>
+						li.proj(data-toggle="collapse", data-target="#content12") Tradebook
+							.content#content12.collapse
 								p Tradebook is a web application made for paper-trading, a form of stock market simulator. The project includes most of a stock market simulator's basic features, such as buying, selling, ask/bid price system, watchlisting, etc. The application includes a simple user account system, where each user can have multiple trade portfolios. Each portfolio has its own set of holdings, account values, and watchlist.
 								p The application was built on the MeteorJS framework and uses the Yahoo Finance API for data. Source code <a href="http://github.com/quanhuynh/tradebook"><strong> here </strong> </a>.
-						li.proj(data-toggle="collapse", data-target="#content12") Java Matrix Package
-							.content#content12.collapse
+						li.proj(data-toggle="collapse", data-target="#content13") Java Matrix Package
+							.content#content13.collapse
 								p The Java Matrix Package is an external .jar file featuring the Matrix class. This class creates Matrix objects from 2D arrays or single values. The class has 20+ methods for working with matrices, from basic operations like adding, multiplying, to finding inverses, determinants, and row reductions.
 								p The .jar file and documentation for methods are available <a href="https://github.com/quanhuynh/matrix-computation-package"> <strong> here </strong> </a>.
-						li.proj(data-toggle="collapse", data-target="#content13") CodeSaver
-							.content#content13.collapse 
+						li.proj(data-toggle="collapse", data-target="#content14") CodeSaver
+							.content#content14.collapse 
 								p CodeSaver is a desktop application for storing code snippets away for future references.
 								p The application was made with Java Swing and the JDBC API to store data with MySQL. Source code <a href="http://github.com/quanhuynh/codesaver"> <strong> here </strong> </a>.
-						li.proj(data-toggle="collapse", data-target="#content14", style="padding-bottom:0;") DailyProgrammer
-							.content#content14.collapse
+						li.proj(data-toggle="collapse", data-target="#content15", style="padding-bottom:0;") DailyProgrammer
+							.content#content15.collapse
 								p A series of solutions to coding challenges on the DailyProgrammer subreddit. I have solved simple problems such as returning a pbm format of a string to more challenging ones such as a modified Langton Ant's simulator and a Flappy Bird game visualized by ASCII. All solutions <a href="https://github.com/quanhuynh/DailyProgrammer"> <strong> here </strong> </a>.
 			.activity
 				.title Things I also do
@@ -55,7 +59,7 @@ html
 						li.proj(data-toggle="collapse", data-target="#content22") Archery
 							.content#content22.collapse I am currently the captain of the Cal Archery Team. We compete nationally throughout the year (and we're pretty good)
 						li.proj(data-toggle="collapse", data-target="#content23") Other
-							.content#content23.collapse I enjoy rock climbing, photography, and reading :)
+							.content#content23.collapse I enjoy rock climbing, photography, and reading. I also recently picked up knitting :)
 		
 		script(src="//code.jquery.com/jquery-1.10.2.js")
 		script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
